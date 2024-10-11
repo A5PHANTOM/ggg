@@ -4,6 +4,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Solanel:wght@400&display=swap" rel="stylesheet"> <!-- Add Solanel font -->
+    <link href="https://fonts.googleapis.com/css2?family=HeadingProTreble-Heavy&display=swap" rel="stylesheet">
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,43 +27,19 @@
         }
         
         .nutrition-hero {
-            background: #ece9e8;
-            min-height: 250vh;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            position: relative;
-            padding-top: 20px;
-            margin: 0;
+          background: #ece9e8; /* Gradient from orange to lighter yellow */
+    min-height: 250vh; /* Full viewport height */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack boxes vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center; /* Center items horizontally */
+    position: relative;
+    padding-top: 20px;
+    margin: 0;
         }
 
-        .inner-white-box {
-            margin: 15px;
-            margin-left: 15%;
-            background-color: white;
-            width: 70%;
-            height: 15%;
-            text-align: center;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            border-radius: 5px;
-            text-align: left;
-        }
-
-        /* Set specific max width for larger screens */
-        .image-content img {
-            max-width: 100%; /* Ensures the image remains responsive */
-            height: auto; /* Keeps aspect ratio */
-            border-radius: 5px;
-        }
-
-        /* Responsive behavior for mobile devices */
-        @media (max-width: 768px) {
-            .inner-white-box {
-                width: 90%; /* Slightly larger width on mobile */
-                margin-left: 5%; /* Center the white box */
-            }
-        }
+  
+      
     </style>
 </head>
 <body>
@@ -101,24 +79,64 @@
     </section>
 
     <section class="nutrition-hero">
-        <div class="white-box">
-            <div class="inner-white-box d-flex">
-                <div class="text-content flex-grow-1">
-                    <h2>VEGAN DIET PLAN</h2>
-                    <h5 style="margin: 0; color: gray;">personalized diet plan for vegans</h5>
-                </div>
-                <div class="image-content flex-grow-1 d-flex justify-content-end">
-                    <img src="assets/vegan.jpg" alt="Vegan Diet Plan" class="img-fluid">
-                </div>
-            </div>
-            
-            <div class="inner-white-box">Box 2 Content</div>
-            <div class="inner-white-box">Box 3 Content</div>
-            <div class="inner-white-box">Box 4 Content</div>
-            <div class="inner-white-box">Box 5 Content</div>
-            <div class="inner-white-box">Box 6 Content</div>
-        </div>
-    </section>
+      <div class="white-box">
+          <div class="inner-white-box vegan">
+              <div class="text-content">
+                  <h2>VEGAN DIET PLAN</h2>
+                  <h5 style="margin: 0; color: gray;">personalized diet plan for vegans</h5>
+              </div>
+             
+          </div>
+
+          <div class="inner-white-box non-veg">
+              <div class="text-content">
+                  <h2>NON-VEG DIET PLAN</h2>
+                  <h5 style="margin: 0; color: gray;">personalized diet plan for non-vegans</h5>
+              </div>
+              
+          </div>
+
+          <div class="inner-white-box bulk">
+              <div class="text-content">
+                  <h2>BULK DIET PLAN</h2>
+                  <h5 style="margin: 0; color: gray;">diet plan for gaining muscle mass</h5>
+              </div>
+              <div class="image-content">
+                  <img src="assets/bulk.jpg" alt="Bulk Diet Plan" class="img-fluid">
+              </div>
+          </div>
+
+          <div class="inner-white-box cut">
+              <div class="text-content">
+                  <h2>CUT DIET PLAN</h2>
+                  <h5 style="margin: 0; color: gray;">diet plan for weight loss</h5>
+              </div>
+              <div class="image-content">
+                  <img src="assets/cut.jpg" alt="Cut Diet Plan" class="img-fluid">
+              </div>
+          </div>
+
+          <div class="inner-white-box women">
+              <div class="text-content">
+                  <h2>DIET PLAN FOR WOMEN</h2>
+                  <h5 style="margin: 0; color: gray;">personalized diet for women</h5>
+              </div>
+              <div class="image-content">
+                  <img src="assets/women.jpg" alt="Diet Plan for Women" class="img-fluid">
+              </div>
+          </div>
+
+          <div class="inner-white-box maintain">
+              <div class="text-content">
+                  <h2>MAINTAIN DIET PLAN</h2>
+                  <h5 style="margin: 0; color: gray;">diet plan for maintaining weight</h5>
+              </div>
+              <div class="image-content">
+                  <img src="assets/maintain.jpg" alt="Maintain Diet Plan" class="img-fluid">
+              </div>
+          </div>
+      </div>
+  </section>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
