@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitness Website</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css"> <!-- Custom styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="homestyles.css"> <!-- Custom styles -->
+    <style>
+
+    </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-      <a class="navbar-brand" href="#">
-        <img src="assets/logo.png" alt="FitLife Logo" style="width: 50px; height: auto;"> <!-- Replace with your logo -->
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Memberships</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Classes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <div class="cart-icon">
-          <a href="#"><i class="fas fa-shopping-cart" style="font-size: 24px; color: white;"></i></a>
-        </div>
-      </div>
-    </nav>
-  </header>
+    <header class="header">
+        <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
+        <img src="assets/logo.png" alt="FitLife Logo" class="logo"> <!-- Logo on the right -->
+    </header>
 
-  <section class="hero">
-    <h1>Join the Fitness Revolution</h1>
-    <p>Access all our gyms and online classes for one low price!</p>
-    <a href="nutrition.html"><button class="cta-button">Join Now</button></a> <!-- Wrapped in anchor tag -->
-    <div class="blue-box"></div> <!-- Blue box at the end of the orange section -->
-  </section>
-  
-  </section>
+    <div class="video-section">
+        <video class="intro-video" autoplay loop muted>
+            <source src="assets/intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-  <footer> 
-    <p>&copy; INTENTIO</p>
-  </footer>
+    <div class="drawer" id="drawer">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleDrawer()">&times;</a>
+        <a href="#">Home</a>
+        <a href="nutrition.html">NUTRITION</a> <!-- Redirects to the nutrition page -->
+        <a href="#">Classes</a>
+        <a href="#">Contact</a>
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="content-area">
+        <h1>Join the Fitness Revolution</h1>
+        <p>Access all our gyms and online classes for one low price!</p>
+        <a href="nutrition.html"><button class="cta-button">Join Now</button></a>
+    </div>
+
+    <footer>
+        <p>&copy; INTENTIO</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleDrawer() {
+            var drawer = document.getElementById("drawer");
+            if (drawer.style.width === "250px") {
+                drawer.style.width = "0";
+            } else {
+                drawer.style.width = "250px";
+            }
+        }
+    </script>
 </body>
 </html>
