@@ -3,9 +3,8 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Solanel:wght@400&display=swap" rel="stylesheet"> <!-- Add Solanel font -->
+    <link href="https://fonts.googleapis.com/css2?family=Solanel:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=HeadingProTreble-Heavy&display=swap" rel="stylesheet">
-
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,132 +12,97 @@
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Custom styles -->
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        
-        header {
-            background-color: #ff6600; /* Orange */
-            color: white;
-        }
-        
-        .nutrition-hero {
-          background: #ece9e8; /* Gradient from orange to lighter yellow */
-    min-height: 250vh; /* Full viewport height */
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Stack boxes vertically */
-    justify-content: flex-start; /* Align items to the top */
-    align-items: center; /* Center items horizontally */
-    position: relative;
-    padding-top: 20px;
-    margin: 0;
-        }
-
-  
-      
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-            <a class="navbar-brand" href="#">
-                <img src="assets/logo.png" alt="FitLife Logo" style="width: 50px; height: auto;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Memberships</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Classes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-                <div class="cart-icon">
-                    <a href="#"><i class="fas fa-shopping-cart" style="font-size: 24px; color: white;"></i></a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <!-- Drawer Menu -->
+    <div id="drawer" class="drawer">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleDrawer()">&times;</a>
+        <a href="index.html">HOME</a> <!-- Link to index.html -->
+    <a href="nutrition.html">NUTRITION</a> <!-- Link to nutrition.html -->
+        <a href="#">Classes</a>
+        <a href="#">Contact</a>
+    </div>
 
-    <section class="upper-photo">
+    <section class="upper-photo" style="position: relative;">
         <img src="assets/demo.jpg" alt="Upper Photo" style="width: 100%; height: auto;">
+        <div class="navbar-toggler hamburger" onclick="toggleDrawer()">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </div>
         <h1 class="nutrition-heading">NUTRITION PLANS</h1>
     </section>
 
     <section class="nutrition-hero">
-      <div class="white-box">
-          <div class="inner-white-box vegan">
-              <div class="text-content">
-                  <h2>VEGAN DIET PLAN</h2>
-                  <h5 style="margin: 0; color: gray;">personalized diet plan for vegans</h5>
-              </div>
-             
-          </div>
+        <div class="white-box">
+            <div class="inner-white-box vegan">
+                <div class="text-content">
+                    <h2>VEGAN DIET PLAN</h2>
+                    <h5 style="margin: 0; color: gray;">personalized diet plan for vegans</h5>
+                </div>
+            </div>
 
-          <div class="inner-white-box non-veg">
-              <div class="text-content">
-                  <h2>NON-VEG DIET PLAN</h2>
-                  <h5 style="margin: 0; color: gray;">personalized diet plan for non-vegans</h5>
-              </div>
-              
-          </div>
+            <div class="inner-white-box non-veg">
+                <div class="text-content">
+                    <h2>NON-VEG DIET PLAN</h2>
+                    <h5 style="margin: 0; color: gray;">personalized diet plan for non-vegans</h5>
+                </div>
+            </div>
 
-          <div class="inner-white-box bulk">
-              <div class="text-content">
-                  <h2>BULK DIET PLAN</h2>
-                  <h5 style="margin: 0; color: gray;">diet plan for gaining muscle mass</h5>
-              </div>
-              <div class="image-content">
-                  <img src="assets/bulk.jpg" alt="Bulk Diet Plan" class="img-fluid">
-              </div>
-          </div>
+            <div class="inner-white-box bulk">
+                <div class="text-content">
+                    <h2>BULK DIET PLAN</h2>
+                    <h5 style="margin: 0; color: gray;">diet plan for gaining muscle mass</h5>
+                </div>
+                <div class="image-content">
+                    <img src="assets/bulk.jpg" alt="Bulk Diet Plan" class="img-fluid">
+                </div>
+            </div>
 
-          <div class="inner-white-box cut">
-              <div class="text-content">
-                  <h2>CUT DIET PLAN</h2>
-                  <h5 style="margin: 0; color: gray;">diet plan for weight loss</h5>
-              </div>
-              <div class="image-content">
-                  <img src="assets/cut.jpg" alt="Cut Diet Plan" class="img-fluid">
-              </div>
-          </div>
+            <div class="inner-white-box cut">
+                <div class="text-content">
+                    <h2>CUT DIET PLAN</h2>
+                    <h5 style="margin: 0; color: gray;">diet plan for weight loss</h5>
+                </div>
+                <div class="image-content">
+                    <img src="assets/cut.jpg" alt="Cut Diet Plan" class="img-fluid">
+                </div>
+            </div>
 
-          <div class="inner-white-box women">
-              <div class="text-content">
-                  <h2>DIET PLAN FOR WOMEN</h2>
-                  <h5 style="margin: 0; color: gray;">personalized diet for women</h5>
-              </div>
-              <div class="image-content">
-                  <img src="assets/women.jpg" alt="Diet Plan for Women" class="img-fluid">
-              </div>
-          </div>
+            <div class="inner-white-box women">
+                <div class="text-content">
+                    <h2>DIET PLAN FOR WOMEN</h2>
+                    <h5 style="margin: 0; color: gray;">personalized diet for women</h5>
+                </div>
+                <div class="image-content">
+                    <img src="assets/women.jpg" alt="Diet Plan for Women" class="img-fluid">
+                </div>
+            </div>
 
-          <div class="inner-white-box maintain">
-              <div class="text-content">
-                  <h2>MAINTAIN DIET PLAN</h2>
-                  <h5 style="margin: 0; color: gray;">diet plan for maintaining weight</h5>
-              </div>
-              <div class="image-content">
-                  <img src="assets/maintain.jpg" alt="Maintain Diet Plan" class="img-fluid">
-              </div>
-          </div>
-      </div>
-  </section>
+            <div class="inner-white-box maintain">
+                <div class="text-content">
+                    <h2>MAINTAIN DIET PLAN</h2>
+                    <h5 style="margin: 0; color: gray;">diet plan for maintaining weight</h5>
+                </div>
+                <div class="image-content">
+                    <img src="assets/maintain.jpg" alt="Maintain Diet Plan" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleDrawer() {
+            var drawer = document.getElementById("drawer");
+            if (drawer.style.width === "250px") {
+                drawer.style.width = "0";
+            } else {
+                drawer.style.width = "250px";
+            }
+        }
+    </script>
 </body>
 </html>
