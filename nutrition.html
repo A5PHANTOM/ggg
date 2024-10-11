@@ -5,122 +5,122 @@
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Solanel:wght@400&display=swap" rel="stylesheet"> <!-- Add Solanel font -->
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition - Fitness Website</title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nutrition - Fitness Website</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css"> <!-- Custom styles -->
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    
-    header {
-      background-color: #ff6600; /* Orange */
-      color: white;
-    }
-    
-    .nutrition-hero {
-    background:#ece9e8; /* Gradient from orange to lighter yellow */
-    min-height: 250vh; /* Full viewport height */
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: flex-start; /* Align items to the top */
-    position: relative;
-    padding-top: 20px;
-    margin: 0;
-  }
-  
-  
-    
-    .inner-white-box {
-      margin: 15px;
-      margin-left: 15%;
-      background-color: white; /* Inner white box */
-      width: 70%; /* Width of 90% */
-      height: 15%; /* Height of each box */
-      text-align: center;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for effect */
-      padding: 20px; /* Padding for content */
-      border-radius: 5px; /* Rounded corners */
-      text-align: left; /* Align text to the left */
-     
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Custom styles -->
 
-      
-    }
-  </style>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background-color: #ff6600; /* Orange */
+            color: white;
+        }
+        
+        .nutrition-hero {
+            background: #ece9e8;
+            min-height: 250vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+            padding-top: 20px;
+            margin: 0;
+        }
+
+        .inner-white-box {
+            margin: 15px;
+            margin-left: 15%;
+            background-color: white;
+            width: 70%;
+            height: 15%;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        /* Set specific max width for larger screens */
+        .image-content img {
+            max-width: 100%; /* Ensures the image remains responsive */
+            height: auto; /* Keeps aspect ratio */
+            border-radius: 5px;
+        }
+
+        /* Responsive behavior for mobile devices */
+        @media (max-width: 768px) {
+            .inner-white-box {
+                width: 90%; /* Slightly larger width on mobile */
+                margin-left: 5%; /* Center the white box */
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-      <a class="navbar-brand" href="#">
-        <img src="assets/logo.png" alt="FitLife Logo" style="width: 50px; height: auto;">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Memberships</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Classes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <div class="cart-icon">
-          <a href="#"><i class="fas fa-shopping-cart" style="font-size: 24px; color: white;"></i></a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" alt="FitLife Logo" style="width: 50px; height: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Memberships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="cart-icon">
+                    <a href="#"><i class="fas fa-shopping-cart" style="font-size: 24px; color: white;"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="upper-photo">
+        <img src="assets/demo.jpg" alt="Upper Photo" style="width: 100%; height: auto;">
+        <h1 class="nutrition-heading">NUTRITION PLANS</h1>
+    </section>
+
+    <section class="nutrition-hero">
+        <div class="white-box">
+            <div class="inner-white-box d-flex">
+                <div class="text-content flex-grow-1">
+                    <h2>VEGAN DIET PLAN</h2>
+                    <h5 style="margin: 0; color: gray;">personalized diet plan for vegans</h5>
+                </div>
+                <div class="image-content flex-grow-1 d-flex justify-content-end">
+                    <img src="assets/vegan.jpg" alt="Vegan Diet Plan" class="img-fluid">
+                </div>
+            </div>
+            
+            <div class="inner-white-box">Box 2 Content</div>
+            <div class="inner-white-box">Box 3 Content</div>
+            <div class="inner-white-box">Box 4 Content</div>
+            <div class="inner-white-box">Box 5 Content</div>
+            <div class="inner-white-box">Box 6 Content</div>
         </div>
-      </div>
-    </nav>
-  </header>
+    </section>
 
-  <section class="upper-photo">
-    <img src="assets/demo.jpg" alt="Upper Photo" style="width: 100%; height: auto;">
-    <h1 class="nutrition-heading">NUTRITION PLANS</h1> <!-- Move the heading here -->
-  </section>
-
-  <section class="nutrition-hero">
-   
-    <div class="white-box">
-      <div class="inner-white-box">
-
-        <div class="text-content" style="flex: 1;">
-          <h2>VEGAN DIET PLAN</h2>
-          <h5 style="margin: 0; color: gray;">personalized diet plan for vegans</h5>
-        </div>
-        
-        <div class="image-content" style="flex: 1; display: flex; justify-content: flex-end;">
-          <img src="assets/vegan.jpg" alt="Vegan Diet Plan" style="max-width: 100%; height: auto; border-radius: 5px;">
-        </div>
-      </div>
-        
-    
-
-
-
-
-
-
-
-      <div class="inner-white-box">Box 2 Content</div>
-      <div class="inner-white-box">Box 3 Content</div>
-      <div class="inner-white-box">Box 4 Content</div>
-      <div class="inner-white-box">Box 5 Content</div>
-      <div class="inner-white-box">Box 6 Content</div>
-    </div>
-  </section>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
