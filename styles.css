@@ -1,21 +1,104 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-  }
-  
-  header {
-    background-color: #ff6600; /* Orange */
-    color: white;
-  }
-  
-  .hero {
-    background-color: #ff6600;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px; /* Position from the top */
+  left: 20px;; /* Position from the right */
+  color: white; /* Icon color */
+  z-index: 10; /* Ensure it is above other elements */
+}
+
+.drawer {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111; /* Dark background */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.drawer a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.drawer a:hover {
+  color: #ff6600; /* Change color on hover */
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* Add this to your styles.css or within a <style> tag */
+.navbar-collapse {
+  transition: transform 0.3s ease;
+  transform: translateX(-100%); /* Hide off-screen */
+}
+
+.navbar-collapse.show {
+  transform: translateX(0); /* Slide in */
+}
+
+
+
+/* Hamburger icon styles */
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it’s on top */
+}
+
+.hamburger span {
+  display: block;
+  width: 30px; /* Width of bars */
+  height: 3px; /* Height of bars */
+  margin: 5px auto; /* Spacing between bars */
+  background-color: white; /* Color of bars */
+  transition: all 0.3s ease; /* Animation for transition */
+}
+
+/* Hover effect */
+.hamburger:hover span {
+  background-color: orange; /* Change to orange on hover */
+}
+
+.hamburger:hover .bar1 {
+  transform: translateY(8px) rotate(45deg); /* Rotate first bar */
+}
+
+.hamburger:hover .bar2 {
+  opacity: 0; /* Hide the middle bar */
+}
+
+.hamburger:hover .bar3 {
+  transform: translateY(-8px) rotate(-45deg); /* Rotate last bar */
+}
+
+.hero {
+  background-color: orange; /* Your desired color */
+  padding: 50px; /* Adjust padding as needed */
+  text-align: center; /* Center text */
+}
   
   .cta-button {
     background-color: white;
@@ -102,16 +185,17 @@ header {
 }
 
 
-  .nutrition-hero {
-    background: #ece9e8; /* Gradient from orange to lighter yellow */
-    min-height: 250vh; /* Full viewport height */
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: flex-start; /* Align items to the top */
-    position: relative;
-    padding-top: 20px;
-    margin: 0;
-  }
+.nutrition-hero {
+  background: #ece9e8; /* Gradient from orange to lighter yellow */
+  min-height: 250vh; /* Full viewport height */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack boxes vertically */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center; /* Center items horizontally */
+  position: relative;
+  padding-top: 20px;
+  margin: 0;
+}
   
 
   .inner-white-box {
@@ -265,4 +349,25 @@ header {
     position: relative; /* Ensure text is on top of the pseudo-element */
     z-index: 1; /* Place it above the background */
     color: white; /* Change text color for better contrast */
+}
+
+
+
+.nutrition-heading {
+  position: absolute; 
+  top: 20%; 
+  left: 5%; 
+  transform: translateY(0); 
+  font-family: 'Poppins', sans-serif; 
+  color: white; /* Initial color is white */
+  text-align: center; 
+  font-size: 4em; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  word-wrap: break-word; 
+  transition: color 1.5s ease; /* Smooth color transition */
+}
+
+/* Hover effect */
+.nutrition-heading:hover {
+  color: #ff6600; /* Change color to orange */
 }
