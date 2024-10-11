@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background-color: #ece9e8; /* Background color */
+    display: flex;
+    flex-direction: column; /* Align elements in a column */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative; /* To position children absolutely */
+    z-index: 1; /* Ensure header stays on top */
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    right: 20px; /* Position on the right */
+    top: 10px; /* Position at the top */
+    z-index: 1; /* Ensure logo is above video */
+}
+
+.video-section {
+    position: fixed; /* Keep the video fixed in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Adjusted height for visibility */
+    z-index: -1; /* Ensure the video is behind other content */
+}
+
+.intro-video {
+    object-fit: cover; /* Make video cover the entire section */
+    width: 100%;
+    height: 100%; /* Ensure the video covers the section */
+}
+
+.content-area {
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Center the text */
+    color: black; /* Text color */
+    position: absolute; /* Change to absolute for positioning */
+    top: 70%; /* Adjusted position from the top */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the center */
+    z-index: 1; /* Ensure it is above the video */
+}
+footer {
+    text-align: center;
+    color: #333; /* Text color for footer */
+    margin-top: 20px; /* Space above footer */
+}
+
+/* Drawer Styles */
+.drawer {
+    height: 120%; /* Full height */
+    width: 0; /* Initial width */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 0;
+    left: 0px; /* Align to the left */
+    background-color: black; /* Drawer background */
+    color: #ece9e8;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* Transition effect */
+    padding-top: 60px; /* Place the menu items down a bit */
+}
+
+.drawer a {
+    padding: 8px 8px 8px 32px; /* Position the links */
+    text-decoration: none; /* Remove underline */
+    font-size: 25px; /* Text size */
+    color: white; /* Text color */
+    display: block; /* Make it a block element */
+    transition: 0.3s; /* Transition effect */
+}
+
+.drawer a:hover {
+    color: #f44336; /* Hover color */
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;}
+.cta-button {
+    padding: 10px 20px;
+    background-color: orange; /* Changed to orange */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #ff9900; /* Example hover color (darker orange) */
+}
