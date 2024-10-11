@@ -143,16 +143,35 @@ header {
 }
 
 .nutrition-heading {
-  position: absolute; /* Position it absolutely */
-  top: 60%; /* Adjust this value to position vertically */
-  left: 30%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center the heading */
+  position: absolute; /* Keep it absolutely positioned */
+  top: 20%; /* Adjust this value to position vertically */
+  left: 5%; /* Center horizontally */
+  transform: translateY(0); /* Center the heading */
   font-family: 'Poppins', sans-serif; /* Use your chosen font */
   color: white; /* Text color */
   text-align: center; /* Center the text */
-  font-size: 4.5em; /* Adjust size as needed */
+  font-size: 4em; /* Adjust size for desktop */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
+  word-wrap: break-word; /* Ensure text wraps properly */
 }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .nutrition-heading {
+    font-size: 3em; /* Reduce font size for tablets */
+    left: 5%; /* Keep left alignment for tablets */
+    top: 10%; /* Adjust top positioning for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .nutrition-heading {
+    font-size: 2.5em; /* Reduce font size for mobile */
+    top: 40%; /* Adjust vertical position on smaller screens */
+    left: 5%; /* Keep left alignment for mobile */
+  }
+}
+
 
 
 .text-content {
@@ -166,7 +185,7 @@ header {
 
 
 .inner-white-box img {
-  max-width: 200px; /* Set a max width for the image */
+  max-width: 100px; /* Set a max width for the image */
   height: auto; /* Maintain aspect ratio */
   border-radius: 5px; /* Rounded corners */
   margin-left: 20px; /* Space between text and image */
@@ -201,3 +220,4 @@ header {
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensures no space below the image */
 }
+
