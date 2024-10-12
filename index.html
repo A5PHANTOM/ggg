@@ -6,11 +6,21 @@
     <title>Fitness Website</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="homestyles.css"> <!-- Custom styles -->
-    <style>
+    <link rel="stylesheet" href="loading.css"> <!-- Custom styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <style>
+   
     </style>
-</head>
+</head> 
 <body>
+    <div class="loading-screen" id="loading-screen">
+        <div class="vertical-text left">#GETFIT</div> <!-- Left side text -->
+        <img src="assets/logo.png" alt="FitLife Logo" class="loading-logo"> <!-- Logo centered on loading screen --> 
+        <div class="vertical-text right">#GETFIT</div> <!-- Right side text -->
+        <h1></h1> <!-- You can customize this text -->
+    </div>
+
     <header class="header">
         <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
         <img src="assets/logo.png" alt="FitLife Logo" class="logo"> <!-- Logo on the right -->
@@ -23,7 +33,7 @@
         </video>
     </div>
 
-    <div class="drawer" id="drawer">s
+    <div class="drawer" id="drawer">
         <a href="javascript:void(0)" class="close-btn" onclick="toggleDrawer()">&times;</a>
         <a href="#">Home</a>
         <a href="nutrition.html">NUTRITION</a> <!-- Redirects to the nutrition page -->
@@ -31,7 +41,7 @@
         <a href="#">Contact</a>
     </div>
 
-    <div class="content-area">
+    <div class="content-area hidden" id="content-area">
         <h1>Join the Fitness Revolution</h1>
         <p>Access all our gyms and online classes for one low price!</p>
         <a href="nutrition.html"><button class="cta-button">Join Now</button></a>
@@ -53,6 +63,17 @@
                 drawer.style.width = "250px";
             }
         }
+
+        // Show loading screen for 3 seconds
+        setTimeout(function() {
+            document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
+            document.getElementById("content-area").classList.remove("hidden"); // Show content area
+        }, 3000); // 3000 milliseconds = 3 seconds
+
+
+
+          
+      
     </script>
 </body>
 </html>
