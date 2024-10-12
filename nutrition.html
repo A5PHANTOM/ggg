@@ -112,12 +112,11 @@
         }
 
             // Show loading screen until the entire page is fully loaded
-           // Show loading screen until the entire page is fully loaded
-           setTimeout(function() {
+      // Show loading screen until the entire page is fully loaded
+           window.onload = function() {
             document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
-            document.getElementById("content-area").classList.remove("hidden"); // Show content area
-        }, 5000); // 3000 milliseconds = 3 seconds
-
+            document.getElementById("content-area").classList.remove("hidden");
+        };
         
     </script>
 </body>
