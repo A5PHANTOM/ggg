@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Solanel:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=HeadingProTreble-Heavy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,92 +13,141 @@
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="loading.css"> <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="loading.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0; /* Remove default margin */
+        }
+        .content {
+            flex: 1;
+            margin-bottom: 100px; /* Add space at the bottom for the footer */
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            position: relative; /* Ensure footer does not overlap */
+        }
+    </style>
 </head>
 <body>
     <div class="loading-screen" id="loading-screen">
-        <div class="vertical-text left">#GETFIT</div> <!-- Left side text -->
-        <img src="assets/logo.png" alt="FitLife Logo" class="loading-logo"> <!-- Logo centered on loading screen --> 
-        <div class="vertical-text right">#GETFIT</div> <!-- Right side text -->
-        <h1></h1> <!-- You can customize this text -->
+        <div class="vertical-text left">#GETFIT</div>
+        <img src="assets/logo.png" alt="FitLife Logo" class="loading-logo">
+        <div class="vertical-text right">#GETFIT</div>
+        <h1></h1>
     </div>
+    
     <!-- Drawer Menu -->
     <div id="drawer" class="drawer">
         <a href="javascript:void(0)" class="close-btn" onclick="toggleDrawer()">&times;</a>
-        <a href="index.html">HOME</a> <!-- Link to index.html -->
-    <a href="nutrition.html">NUTRITION</a> <!-- Link to nutrition.html -->
+        <a href="index.html">HOME</a>
+        <a href="nutrition.html">NUTRITION</a>
         <a href="#">Classes</a>
         <a href="#">Contact</a>
+        <a href="Fitness.html">FITNESS</a>
     </div>
 
-    <section class="upper-photo" style="position: relative;">
-        <img src="assets/demo.jpg" alt="Upper Photo" style="width: 100%; height: auto;">
-        <div class="navbar-toggler hamburger" onclick="toggleDrawer()">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-            <span class="bar3"></span>
+    <div class="content">
+        <section class="upper-photo" style="position: relative;">
+            <img src="assets/demo.jpg" alt="Upper Photo" style="width: 100%; height: auto;">
+            <div class="navbar-toggler hamburger" onclick="toggleDrawer()">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+            <h1 class="nutrition-heading">NUTRITION PLANS</h1>
+        </section>
+
+        <section class="nutrition-hero">
+            <div class="white-box">
+                <div class="inner-white-box vegan">
+                    <div class="text-content">
+                        <h2>VEGAN DIET PLAN</h2>
+                        <h5 style="margin: 0; color: gray;">personalized diet plan for vegans</h5>
+                    </div>
+                </div>
+
+                <div class="inner-white-box non-veg">
+                    <div class="text-content">
+                        <h2>NON-VEG DIET PLAN</h2>
+                        <h5 style="margin: 0; color: gray;">personalized diet plan for non-vegans</h5>
+                    </div>
+                </div>
+
+                <div class="inner-white-box bulk">
+                    <div class="text-content">
+                        <h2>BULK DIET PLAN</h2>
+                        <h5 style="margin: 0; color: gray;">diet plan for gaining muscle mass</h5>
+                    </div>
+                    <div class="image-content">
+                        <img src="assets/bulk.jpg" alt="Bulk Diet Plan" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="inner-white-box cut">
+                    <div class="text-content">
+                        <h2>CUT DIET PLAN</h2>
+                        <h5 style="margin: 0; color: gray;">diet plan for weight loss</h5>
+                    </div>
+                    <div class="image-content">
+                        <img src="assets/cut.jpg" alt="Cut Diet Plan" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="inner-white-box women">
+                    <div class="text-content">
+                        <h2>DIET PLAN FOR WOMEN</h2>
+                        <h5 style="margin: 0; color: gray;">personalized diet for women</h5>
+                    </div>
+                    <div class="image-content">
+                        <img src="assets/women.jpg" alt="Diet Plan for Women" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="inner-white-box maintain">
+                    <div class="text-content">
+                        <h2>MAINTAIN DIET PLAN</h2>
+                        <h5 style="margin: 0; color: gray;">diet plan for maintaining weight</h5>
+                    </div>
+                    <div class="image-content">
+                        <img src="assets/maintain.jpg" alt="Maintain Diet Plan" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div style="flex: 1;">
+            <div style="font-family: 'Zen Dots', sans-serif; font-size: 24px; margin-bottom: 10px;">
+                INTENTIO
+            </div>
+            <div style="display: flex; gap: 30px; margin-top: 10px;">
+                <a href="nutrition.html" style="text-decoration: none; color: white;">
+                    <h2 style="font-family: 'Zen Dots', sans-serif; color: white; font-size: 18px;">Nutrition</h2>
+                </a>
+                <h2 style="font-family: 'Zen Dots', sans-serif; color: white; font-size: 18px;">Company</h2>
+                <h2 style="font-family: 'Zen Dots', sans-serif; color: white; font-size: 18px;">Tools</h2>
+                <h2 style="font-family: 'Zen Dots', sans-serif; color: white; font-size: 18px;">Services</h2>
+            </div>
+            <div style="margin-top: 10px;">
+                <a href="https://instagram.com" target="_blank" style="margin-right: 10px;">
+                    <img src="assets/instagram.png" alt="Instagram" width="30" height="30">
+                </a>
+                <a href="https://twitter.com" target="_blank" style="margin-right: 10px;">
+                    <img src="assets/twitter.png" alt="Twitter" width="30" height="30">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="assets/facebook.jpg" alt="Facebook" width="30" height="30">
+                </a>
+            </div>
         </div>
-        <h1 class="nutrition-heading">NUTRITION PLANS</h1>
-    </section>
-
-    <section class="nutrition-hero">
-        <div class="white-box">
-            <div class="inner-white-box vegan">
-                <div class="text-content">
-                    <h2>VEGAN DIET PLAN</h2>
-                    <h5 style="margin: 0; color: gray;">personalized diet plan for vegans</h5>
-                </div>
-            </div>
-
-            <div class="inner-white-box non-veg">
-                <div class="text-content">
-                    <h2>NON-VEG DIET PLAN</h2>
-                    <h5 style="margin: 0; color: gray;">personalized diet plan for non-vegans</h5>
-                </div>
-            </div>
-
-            <div class="inner-white-box bulk">
-                <div class="text-content">
-                    <h2>BULK DIET PLAN</h2>
-                    <h5 style="margin: 0; color: gray;">diet plan for gaining muscle mass</h5>
-                </div>
-                <div class="image-content">
-                    <img src="assets/bulk.jpg" alt="Bulk Diet Plan" class="img-fluid">
-                </div>
-            </div>
-
-            <div class="inner-white-box cut">
-                <div class="text-content">
-                    <h2>CUT DIET PLAN</h2>
-                    <h5 style="margin: 0; color: gray;">diet plan for weight loss</h5>
-                </div>
-                <div class="image-content">
-                    <img src="assets/cut.jpg" alt="Cut Diet Plan" class="img-fluid">
-                </div>
-            </div>
-
-            <div class="inner-white-box women">
-                <div class="text-content">
-                    <h2>DIET PLAN FOR WOMEN</h2>
-                    <h5 style="margin: 0; color: gray;">personalized diet for women</h5>
-                </div>
-                <div class="image-content">
-                    <img src="assets/women.jpg" alt="Diet Plan for Women" class="img-fluid">
-                </div>
-            </div>
-
-            <div class="inner-white-box maintain">
-                <div class="text-content">
-                    <h2>MAINTAIN DIET PLAN</h2>
-                    <h5 style="margin: 0; color: gray;">diet plan for maintaining weight</h5>
-                </div>
-                <div class="image-content">
-                    <img src="assets/maintain.jpg" alt="Maintain Diet Plan" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
+    </footer>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
@@ -111,13 +161,10 @@
             }
         }
 
-            // Show loading screen until the entire page is fully loaded
-      // Show loading screen until the entire page is fully loaded
-       setTimeout(function() {
+        // Show loading screen until the entire page is fully loaded
+        setTimeout(function() {
             document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
-            document.getElementById("content-area").classList.remove("hidden"); // Show content area
         }, 3000); // 3000 milliseconds = 3 seconds
-        
     </script>
 </body>
 </html>
