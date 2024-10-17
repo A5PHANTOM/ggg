@@ -7,6 +7,13 @@ body {
     flex-direction: column;
 }
 
+/* Navbar styles */
+.navbar-nav .nav-link {
+    font-family: 'Zen Dots', sans-serif; /* Set Zen Dots font */
+    color: black; /* Color for navbar items */
+}
+
+
 .header {
     display: flex;
     justify-content: space-between;
