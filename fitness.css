@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* Navbar styles */
+.navbar-nav .nav-link {
+    font-family: 'Zen Dots', sans-serif; /* Set Zen Dots font */
+    color: #333;
+}
+.fitness-heading {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 26px; /* Size for the main heading */
+}
+
+.fitness-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.image-container {
+    position: relative;
+    margin: 10px 0; /* Add some vertical spacing between images */
+    width: 100%; /* Full width */
+    max-width: 1171px; /* Maximum width */
+}
+
+.image-container img {
+    width: 1171px; /* Set to fixed size for desktop */
+    height: 355px; /* Set to fixed height for desktop */
+    border-radius: 20px; /* Rounded corners */
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px; /* Position text at the bottom */
+    right: 20px; /* Position text at the right */
+    color: white;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 52px; /* Increased font size for image headings on desktop */
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer h2 {
+    font-family: 'Zen Dots', sans-serif;
+    color: white;
+    font-size: 18px; /* Adjusted font size */
+    margin: 0 15px; /* Margin for spacing */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .image-container img {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .overlay-text {
+        font-size: 18px; /* Adjust font size for mobile */
+    }
+
+    footer h2 {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+}
