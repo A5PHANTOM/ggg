@@ -401,3 +401,33 @@ header {
     z-index: 1; /* Place it above the background */
     color: white; /* Change text color for better contrast */
 }
+
+
+
+.inner-white-box.bulk{
+  position: relative; /* Position relative for absolute positioning of overlay */
+    background-image: url('assets/bulk.webp'); /* Path to your vegan image */
+    background-size: cover; /* Cover the entire box */
+    background-position: center; /* Center the image */
+    color: white; /* Change text color to white for better contrast */
+    
+}
+
+
+.inner-white-box.bulk::before {
+  content: ""; /* Necessary for pseudo-element */
+  position: absolute; /* Positioning overlay */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  border-radius: 10px; /* Same radius as the box for rounded corners */
+  z-index: 1; /* Ensure overlay is above the background image */
+}
+.inner-white-box.bulk h2,
+.inner-white-box.bulk h5 {
+    position: relative; /* Ensure text is on top of the pseudo-element */
+    z-index: 1; /* Place it above the background */
+    color: white; /* Change text color for better contrast */
+}
