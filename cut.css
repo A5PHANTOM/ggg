@@ -1,0 +1,118 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Zen Dots', sans-serif; /* Ensure the entire body uses Zen Dots font */
+    background-color: #D9D9D9;
+}
+body {
+    min-height: 100vh; /* Ensures the body takes up the full height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar styles */
+.navbar-nav .nav-link {
+    font-family: 'Zen Dots', sans-serif;
+    color: #333;
+}
+
+/* Cut Heading */
+.cut-heading {
+    text-align: center; /* Keep heading centered */
+    margin: 20px 0;
+}
+
+.cut-heading h1 {
+    font-size: 26px;
+}
+
+.cut-heading p {
+    text-align: center; /* Center align the paragraph */
+    max-width: 800px;
+    margin: 0 auto; /* Center the paragraph */
+}
+
+/* Key Principles Section Styles */
+.cut-principles {
+    max-width: 800px;
+     /* Center the section */
+    text-align: right; /* Align the whole section to the left */
+    padding-left: 10px; /* Remove any default padding on the left */
+}
+
+.cut-subheading {
+    font-size: 22px; /* Slightly larger font for subheading */
+    margin-bottom: 0;
+    text-align: right;
+    
+}
+
+.cut-list {
+    font-size: 18px;
+    line-height: 1.6;
+    padding-left: 0; /* Remove padding on the left */
+    list-style-position: inside; /* Optional: adjust list style position */
+    text-align: left;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 100px;
+    background-color: black;
+    color: white;
+    margin-top: 700px;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer h2 {
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    footer h2 {
+        font-size: 16px;
+    }
+}
+
+.cut-formula {
+    max-width: 800px; /* Set a maximum width */
+ 
+    text-align: left; /* Keep text aligned to the left */
+    padding-left: 10px; /* Optional: Adjust padding */
+}
+
+
+.flex-container {
+    display: flex; /* Use flexbox layout */
+    justify-content:space-between; /* Space between the items */
+    align-items: center ;/* Align items vertically */
+    max-width: 800px; /* Set a max width */
+    
+}
+
+.shopping-list {
+    text-align: left;
+    position: relative;
+}
+
+
+.shopping-list-items {
+    max-width: 400px; /* Set a maximum width for the shopping list */
+
+    text-align: left; /* Keep text aligned to the left */
+    padding-right: 10px; /* Optional: Adjust padding */
+    position: absolute; /* Position it absolutely */
+    right: 10%; /* Align it towards the right side */
+   top: 8cm;
+   
+}
