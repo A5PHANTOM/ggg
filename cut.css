@@ -1,118 +1,150 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    font-family: 'Zen Dots', sans-serif; /* Ensure the entire body uses Zen Dots font */
-    background-color: #D9D9D9;
-}
+/* General Styles */
 body {
-    min-height: 100vh; /* Ensures the body takes up the full height */
-    display: flex;
-    flex-direction: column;
-}
-
-/* Navbar styles */
-.navbar-nav .nav-link {
     font-family: 'Zen Dots', sans-serif;
-    color: #333;
 }
 
-/* Cut Heading */
+#background-wrapper {
+    background-color: rgba(217, 217, 217, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+    color: #333; /* Adjust the text color as needed */
+}
+
 .cut-heading {
-    text-align: center; /* Keep heading centered */
-    margin: 20px 0;
+    text-align: center;
+    padding: 20px;
 }
 
-.cut-heading h1 {
-    font-size: 26px;
+.cut-bg-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.cut-heading p {
-    text-align: center; /* Center align the paragraph */
-    max-width: 800px;
-    margin: 0 auto; /* Center the paragraph */
-}
-
-/* Key Principles Section Styles */
 .cut-principles {
-    max-width: 800px;
-     /* Center the section */
-    text-align: right; /* Align the whole section to the left */
-    padding-left: 10px; /* Remove any default padding on the left */
-}
-
-.cut-subheading {
-    font-size: 22px; /* Slightly larger font for subheading */
-    margin-bottom: 0;
-    text-align: right;
-    
+    padding: 20px;
 }
 
 .cut-list {
-    font-size: 18px;
-    line-height: 1.6;
-    padding-left: 0; /* Remove padding on the left */
-    list-style-position: inside; /* Optional: adjust list style position */
-    text-align: left;
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
 }
-
-/* Footer Styles */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 100px;
-    background-color: black;
-    color: white;
-    margin-top: 700px;
-}
-
-footer div {
-    flex: 1;
-}
-
-footer h2 {
-    font-family: 'Zen Dots', sans-serif;
-    font-size: 18px;
-    margin: 0 15px;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    footer h2 {
-        font-size: 16px;
-    }
-}
-
-.cut-formula {
-    max-width: 800px; /* Set a maximum width */
- 
-    text-align: left; /* Keep text aligned to the left */
-    padding-left: 10px; /* Optional: Adjust padding */
-}
-
-
-.flex-container {
-    display: flex; /* Use flexbox layout */
-    justify-content:space-between; /* Space between the items */
-    align-items: center ;/* Align items vertically */
-    max-width: 800px; /* Set a max width */
-    
-}
-
-.shopping-list {
-    text-align: left;
-    position: relative;
-}
-
 
 .shopping-list-items {
-    max-width: 400px; /* Set a maximum width for the shopping list */
+    margin-top: 20px;
+    text-align: left; /* Align text to the left */
+    max-width: 600px; /* Set a maximum width for the shopping list */
+    margin-left: 0; /* Align to the left */
+    margin-right: auto; /* Keep right margin automatic to center */
+    padding-left: 20px; /* Optional: Add padding for better appearance */
+    font-size: 18px; /* Increase font size as needed */
+}
 
-    text-align: left; /* Keep text aligned to the left */
-    padding-right: 10px; /* Optional: Adjust padding */
-    position: absolute; /* Position it absolutely */
-    right: 10%; /* Align it towards the right side */
-   top: 8cm;
-   
+.footer-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-subtitle {
+    font-size: 18px;
+}
+
+.social-media-links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px; /* Space between icons */
+}
+
+/* Suggested Recipes */
+.recipes {
+    margin-top: 20px;
+    text-align: center; /* Center the section title */
+    max-width: 600px; /* Maximum width for the recipes section */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    padding: 20px; /* Add padding around the section */
+    font-size: 18px; /* Increase font size as needed */
+}
+
+/* Ensure the list items within the recipes section are also centered */
+.recipes ul {
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+}
+
+.recipes li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    text-align: left; /* Align the text within the list to the left */
+    max-width: 400px; /* Limit width of list items */
+    margin-left: auto; /* Center items within the max-width */
+    margin-right: auto; /* Center items within the max-width */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(217, 217, 217, 0.8);
+}
+
+.nav-link {
+    color: #000; /* Change link color as needed */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Suggested Recipes and Breakfast Section */
+.breakfast-container {
+    display: flex;                /* Use flexbox for layout */
+    justify-content: space-between; /* Space between content and image */
+    align-items: flex-start;      /* Align items to the start (top) */
+}
+
+.breakfast-content {
+    flex: 1;                      /* Allow the content to grow and take available space */
+    margin-right: 20px;          /* Add some margin to the right of the content */
+}
+
+.breakfast-image {
+    margin: 0 auto;             /* Prevent the image from shrinking */
+    width: 300px;                /* Set a specific width for the image */
+    height: auto;  
+    margin-left: -30px;              /* Maintain aspect ratio */
+}
+
+/* Media Queries for Mobile Responsiveness */
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .breakfast-container {
+        flex-direction: column;  /* Stack elements vertically on small screens */
+        align-items: center;      /* Center items in the container */
+        text-align: center;       /* Center text for better presentation */
+    }
+
+    .breakfast-content {
+        margin-right: 0;        /* Remove right margin */
+        margin-bottom: 20px;    /* Add some bottom margin */
+    }
+
+    .breakfast-image {
+        width: auto;            /* Adjust width for better centering */
+        max-width: 100%;        /* Ensure the image doesn't exceed container width */
+        height: auto;           /* Maintain aspect ratio */
+        margin: 0 auto;         /* Center the image */
+        margin-left: 0;         /* Reset left margin for mobile */
+    }
 }
