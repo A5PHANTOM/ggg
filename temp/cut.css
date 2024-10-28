@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Zen Dots', sans-serif;
+}
+
+#background-wrapper {
+    background-image: url('assets/bg1.png'); /* Adjust the path if needed */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent repetition */
+    min-height: 50%; /* Set a smaller height */
+}
+
+
+
+h1, h2, h3, h4 {
+    color: #333; /* Adjust the text color as needed */
+}
+
+.cut-heading {
+    text-align: center;
+    padding: 20px;
+}
+
+.cut-bg-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.cut-principles {
+    padding: 20px;
+}
+
+.cut-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.shopping-list-items {
+    margin-top: 20px;
+    text-align: left; /* Align text to the left */
+    max-width: 600px; /* Set a maximum width for the shopping list */
+    margin-left: 0; /* Align to the left */
+    margin-right: auto; /* Keep right margin automatic to center */
+    padding-left: 20px; /* Optional: Add padding for better appearance */
+    font-size: 18px; /* Increase font size as needed */
+}
+
+.footer-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-subtitle {
+    font-size: 18px;
+}
+
+.social-media-links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px; /* Space between icons */
+}
+
+/* Suggested Recipes */
+.recipes {
+    margin-top: 20px;
+    text-align: center; /* Center the section title */
+    max-width: 600px; /* Maximum width for the recipes section */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    padding: 20px; /* Add padding around the section */
+    font-size: 18px; /* Increase font size as needed */
+}
+
+/* Ensure the list items within the recipes section are also centered */
+.recipes ul {
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+}
+
+.recipes li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    text-align: left; /* Align the text within the list to the left */
+    max-width: 400px; /* Limit width of list items */
+    margin-left: auto; /* Center items within the max-width */
+    margin-right: auto; /* Center items within the max-width */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(217, 217, 217, 0.8);
+}
+
+.nav-link {
+    color: #000; /* Change link color as needed */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Suggested Recipes and Breakfast Section */
+.breakfast-container {
+    display: flex;                /* Use flexbox for layout */
+    justify-content: space-between; /* Space between content and image */
+    align-items: flex-start;      /* Align items to the start (top) */
+}
+
+.breakfast-content {
+    flex: 1;                      /* Allow the content to grow and take available space */
+    margin-right: 20px;          /* Add some margin to the right of the content */
+}
+
+.breakfast-image {
+    margin: 0 auto;             /* Prevent the image from shrinking */
+    width: 300px;                /* Set a specific width for the image */
+    height: auto;  
+    margin-left: -30px;              /* Maintain aspect ratio */
+}
+
+/* Media Queries for Mobile Responsiveness */
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .breakfast-container {
+        flex-direction: column;  /* Stack elements vertically on small screens */
+        align-items: center;      /* Center items in the container */
+        text-align: center;       /* Center text for better presentation */
+    }
+
+    .breakfast-content {
+        margin-right: 0;        /* Remove right margin */
+        margin-bottom: 20px;    /* Add some bottom margin */
+    }
+
+    .breakfast-image {
+        width: auto;            /* Adjust width for better centering */
+        max-width: 100%;        /* Ensure the image doesn't exceed container width */
+        height: auto;           /* Maintain aspect ratio */
+        margin: 0 auto;         /* Center the image */
+        margin-left: 0;         /* Reset left margin for mobile */
+    }
+}
