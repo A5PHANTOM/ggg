@@ -3,18 +3,12 @@ body {
     font-family: 'Zen Dots', sans-serif;
 }
 
-#background-wrapper {
-    background-image: url('assets/bg1.png'); /* Adjust the path if needed */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the background */
-    background-repeat: no-repeat; /* Prevent repetition */
-    min-height: 50%; /* Set a smaller height */
-}
+
 
 
 
 h1, h2, h3, h4 {
-    color: #333; /* Adjust the text color as needed */
+    color: yellow; /* Adjust the text color as needed */
 }
 
 .cut-heading {
@@ -104,8 +98,38 @@ h1, h2, h3, h4 {
     background-color: rgba(217, 217, 217, 0.8);
 }
 
+    .cut-background {
+        background-image: url('assets/bg1.png'); /* Your background image */
+        background-size: cover; /* Cover the entire area */
+        background-position: top center; /* Align the image to the top */
+        background-repeat: no-repeat; /* Prevent repetition */
+        padding: 20px; /* Adjust padding as needed for spacing */
+        min-height: calc(100vh - 56px); /* Adjust this value based on navbar height */
+        color: white;
+    }
+    
+
+    .centered-text {
+        position: relative; /* Use absolute positioning */
+        text-align: center;
+   
+   
+    max-width: 500px; /* Set a maximum width for better readability */
+    padding: 3px; /* Remove padding */
+    top: 105px; /* Distance from the top edge of the page (adjust this value) */
+    font-size: 30px; /* Increase font size (adjust as needed) */
+    }
+    
+
+
+/* Reset background for the following sections */
+.cut-principles {
+background-color: white; /* Change to white */
+padding: 20px; /* Optional: Add padding for spacing */
+}
+
 .nav-link {
-    color: #000; /* Change link color as needed */
+    color: yellow; /* Change link color as needed */
 }
 
 .nav-link:hover {
@@ -152,4 +176,9 @@ h1, h2, h3, h4 {
         margin: 0 auto;         /* Center the image */
         margin-left: 0;         /* Reset left margin for mobile */
     }
+
+
+
+   
+       
 }
