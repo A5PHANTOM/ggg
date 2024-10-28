@@ -1,15 +1,27 @@
 /* General Styles */
 body {
     font-family: 'Zen Dots', sans-serif;
+    min-width: 1200px;
+    max-width: 100%;
 }
 
 
 
 
 
-h1, h2, h3, h4 {
+h1 {
     color: yellow; /* Adjust the text color as needed */
 }
+ h2, h3, h4 {
+    color: black; /* Adjust the text color as needed */
+}
+
+.cut-subheading {
+    font-size: 32px; /* Set font size to 34px */
+    text-align: center; /* Optional: Center the heading if desired */
+    margin-top: 20px; /* Optional: Add some space above the heading */
+}
+
 
 .cut-heading {
     font-size: 50px; /* Increase this value as needed */
@@ -29,8 +41,9 @@ h1, h2, h3, h4 {
 }
 
 .cut-list {
+    font-size: 20px;
     list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
+    padding: 20px; /* Remove default padding */
 }
 
 .shopping-list-items {
@@ -40,7 +53,7 @@ h1, h2, h3, h4 {
     margin-left: 0; /* Align to the left */
     margin-right: auto; /* Keep right margin automatic to center */
     padding-left: 20px; /* Optional: Add padding for better appearance */
-    font-size: 18px; /* Increase font size as needed */
+    font-size: 20px; /* Increase font size as needed */
 }
 
 .footer-title {
@@ -114,12 +127,27 @@ h1, h2, h3, h4 {
     .cut-description {
         text-align: left;
         font-size: 30px; /* Adjust size as needed */
-        margin: 183px auto 0; /* Increase margin-top to move text lower */
+        margin: 400px auto 0; /* Increase margin-top to move text lower */
         padding: 20px;
         width: 100%;
     }
     
-   
+
+    .text-center {
+        text-align: center; /* Center the text */
+        margin: 20px; /* Optional: Add margin to create space around the paragraph */
+        font-size: 24px; /* Adjust font size as needed */
+    }
+
+    
+   .cutprninc-text{
+    text-align: center;
+    margin: 0 20px; /* Add margin to left and right (20px as an example) */
+    margin: 400px ;
+
+    color: black; /* Change text color to black */
+    font-size: 50px; /* Adjust font size as needed */
+   }
 
     .animated-text {
         font-size: 30px; /* Adjust font size */
@@ -154,14 +182,46 @@ padding: 20px; /* Optional: Add padding for spacing */
 
 .breakfast-content {
     flex: 1;                      /* Allow the content to grow and take available space */
-    margin-right: 20px;          /* Add some margin to the right of the content */
+    margin-right: 20px;  
+    font-size: 20px;        /* Add some margin to the right of the content */
 }
 
 .breakfast-image {
     position: relative; /* Enables positioning */
     left: -10px; /* Adjust the value to move left */
     top: -10px;
-    border-radius: 20px; /* Adjust the radius for more roundness */
+    /* Adjust the radius for more roundness */
+}
+
+/* Lunch Container */
+.lunch-container {
+    display: flex;                    /* Use flexbox for layout */
+    justify-content: flex-end;      /* Align items to the start */
+    align-items: flex-start;          /* Align items to the start (top) */
+    margin: 20px 0;                  /* Optional: Add margin for spacing */
+}
+
+.lunch-image {
+    margin-right: 20px;              /* Add space between the image and text */
+    width: 200px;                    /* Adjust the width as needed */
+    height: auto;                    /* Maintain aspect ratio */
+}
+
+.lunch-content {
+    flex: 1;                         /* Allow the content to grow and take available space */
+    font-size: 20px;                /* Font size */
+    text-align: right;               /* Align text to the left */
+}
+
+.lunch-content ul {
+    list-style-type: disc;           /* Set bullet type */
+    padding-left: 20px;              /* Add padding to the left for better appearance */
+    text-align: left;                      /* Remove default margin */
+}
+
+.lunch-content li {
+    margin-bottom: 10px;
+    text-align: right;             /* Space between list items */
 }
 
 
