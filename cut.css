@@ -3,18 +3,18 @@ body {
     font-family: 'Zen Dots', sans-serif;
 }
 
-#background-wrapper {
-    background-color: rgba(217, 217, 217, 0.8);
-    transition: background-color 0.3s ease;
-}
+
+
+
 
 h1, h2, h3, h4 {
-    color: #333; /* Adjust the text color as needed */
+    color: yellow; /* Adjust the text color as needed */
 }
 
 .cut-heading {
+    font-size: 50px; /* Increase this value as needed */
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 .cut-bg-image {
@@ -99,8 +99,46 @@ h1, h2, h3, h4 {
     background-color: rgba(217, 217, 217, 0.8);
 }
 
+    .cut-background {
+        background-image: url('assets/bg1.png'); /* Your background image */
+        background-size: cover; /* Cover the entire area */
+        background-position: top center; /* Align the image to the top */
+        background-repeat: no-repeat; /* Prevent repetition */
+        padding: 20px; /* Adjust padding as needed for spacing */
+        min-height: calc(100vh - 56px); /* Adjust this value based on navbar height */
+        color: white;
+    }
+    
+
+   
+    .cut-description {
+        text-align: left;
+        font-size: 30px; /* Adjust size as needed */
+        margin: 183px auto 0; /* Increase margin-top to move text lower */
+        padding: 20px;
+        width: 100%;
+    }
+    
+   
+
+    .animated-text {
+        font-size: 30px; /* Adjust font size */
+        color: yellow; /* Start color */
+        transition: color 0.5s ease; /* Smooth transition for color */
+    }
+    
+    .animated-text:hover {
+        color: white; /* Change text color on hover */
+    }
+    
+/* Reset background for the following sections */
+.cut-principles {
+background-color: white; /* Change to white */
+padding: 20px; /* Optional: Add padding for spacing */
+}
+
 .nav-link {
-    color: #000; /* Change link color as needed */
+    color: yellow; /* Change link color as needed */
 }
 
 .nav-link:hover {
@@ -120,13 +158,13 @@ h1, h2, h3, h4 {
 }
 
 .breakfast-image {
-    margin: 0 auto;             /* Prevent the image from shrinking */
-    width: 300px;                /* Set a specific width for the image */
-    height: auto;  
-    margin-left: -30px;              /* Maintain aspect ratio */
+    position: relative; /* Enables positioning */
+    left: -10px; /* Adjust the value to move left */
+    top: -10px;
+    border-radius: 20px; /* Adjust the radius for more roundness */
 }
 
-/* Media Queries for Mobile Responsiveness */
+
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     .breakfast-container {
@@ -147,4 +185,9 @@ h1, h2, h3, h4 {
         margin: 0 auto;         /* Center the image */
         margin-left: 0;         /* Reset left margin for mobile */
     }
+
+
+
+   
+       
 }
