@@ -5,26 +5,21 @@ body {
     max-width: 100%;
 }
 
-
-
-
-
 h1 {
-    color: yellow; /* Adjust the text color as needed */
+    color: yellow;
 }
- h2, h3, h4 {
-    color: black; /* Adjust the text color as needed */
+h2, h3, h4 {
+    color: black;
 }
 
 .cut-subheading {
-    font-size: 32px; /* Set font size to 34px */
-    text-align: center; /* Optional: Center the heading if desired */
-    margin-top: 20px; /* Optional: Add some space above the heading */
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
 }
 
-
 .cut-heading {
-    font-size: 50px; /* Increase this value as needed */
+    font-size: 50px;
     text-align: center;
     padding: 15px;
 }
@@ -42,20 +37,15 @@ h1 {
 
 .cut-list {
     font-size: 20px;
-    list-style-type: none; /* Remove default list styling */
-    padding: 20px; /* Remove default padding */
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-.shopping-list-items {
-    margin-top: 20px;
-    text-align: left; /* Align text to the left */
-    max-width: 600px; /* Set a maximum width for the shopping list */
-    margin-left: 0; /* Align to the left */
-    margin-right: auto; /* Keep right margin automatic to center */
-    padding-left: 20px; /* Optional: Add padding for better appearance */
-    font-size: 20px; /* Increase font size as needed */
+.cut-list li {
+    margin-bottom: 8px;
 }
 
+/* Responsive Footer Styles */
 .footer-title {
     font-size: 24px;
     text-align: center;
@@ -78,33 +68,30 @@ h1 {
 .social-icon {
     width: 30px;
     height: 30px;
-    margin: 0 5px; /* Space between icons */
+    margin: 0 5px;
 }
 
 /* Suggested Recipes */
 .recipes {
     margin-top: 20px;
-    text-align: center; /* Center the section title */
-    max-width: 600px; /* Maximum width for the recipes section */
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
-    padding: 20px; /* Add padding around the section */
-    font-size: 18px; /* Increase font size as needed */
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 18px;
 }
 
-/* Ensure the list items within the recipes section are also centered */
 .recipes ul {
-    padding: 0; /* Remove default padding */
-    list-style-type: none; /* Remove default list styling */
-    margin: 0; /* Remove default margin */
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
 }
 
 .recipes li {
-    margin-bottom: 10px; /* Add spacing between list items */
-    text-align: left; /* Align the text within the list to the left */
-    max-width: 400px; /* Limit width of list items */
-    margin-left: auto; /* Center items within the max-width */
-    margin-right: auto; /* Center items within the max-width */
+    margin-bottom: 10px;
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 /* Navbar Styles */
@@ -112,142 +99,158 @@ h1 {
     background-color: rgba(217, 217, 217, 0.8);
 }
 
-    .cut-background {
-        background-image: url('assets/bg1.png'); /* Your background image */
-        background-size: cover; /* Cover the entire area */
-        background-position: top center; /* Align the image to the top */
-        background-repeat: no-repeat; /* Prevent repetition */
-        padding: 20px; /* Adjust padding as needed for spacing */
-        min-height: calc(100vh - 56px); /* Adjust this value based on navbar height */
-        color: white;
-    }
-    
+.cut-background {
+    background-image: url('assets/bg1.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    min-height: calc(100vh - 56px);
+    color: white;
+}
 
-   
-    .cut-description {
-        text-align: left;
-        font-size: 30px; /* Adjust size as needed */
-        margin: 400px auto 0; /* Increase margin-top to move text lower */
-        padding: 20px;
-        width: 100%;
-    }
-    
+.cut-description {
+    text-align: left;
+    font-size: 30px;
+    margin: 400px auto 0;
+    padding: 20px;
+    width: 100%;
+}
 
-    .text-center {
-        text-align: center; /* Center the text */
-        margin: 20px; /* Optional: Add margin to create space around the paragraph */
-        font-size: 24px; /* Adjust font size as needed */
-    }
-
-    
-   .cutprninc-text{
+.cutprninc-text {
     text-align: center;
-    margin: 0 20px; /* Add margin to left and right (20px as an example) */
-    margin: 400px ;
+    margin: 0 20px;
+    color: black;
+    font-size: 50px;
+}
 
-    color: black; /* Change text color to black */
-    font-size: 50px; /* Adjust font size as needed */
-   }
+.animated-text {
+    font-size: 30px;
+    color: yellow;
+    transition: color 0.5s ease;
+}
 
-    .animated-text {
-        font-size: 30px; /* Adjust font size */
-        color: yellow; /* Start color */
-        transition: color 0.5s ease; /* Smooth transition for color */
-    }
-    
-    .animated-text:hover {
-        color: white; /* Change text color on hover */
-    }
-    
-/* Reset background for the following sections */
-.cut-principles {
-background-color: white; /* Change to white */
-padding: 20px; /* Optional: Add padding for spacing */
+.animated-text:hover {
+    color: white;
 }
 
 .nav-link {
-    color: yellow; /* Change link color as needed */
+    color: yellow;
 }
 
 .nav-link:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
-/* Suggested Recipes and Breakfast Section */
+/* Breakfast Section */
 .breakfast-container {
-    display: flex;                /* Use flexbox for layout */
-    justify-content: space-between; /* Space between content and image */
-    align-items: flex-start;      /* Align items to the start (top) */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .breakfast-content {
-    flex: 1;                      /* Allow the content to grow and take available space */
-    margin-right: 20px;  
-    font-size: 20px;        /* Add some margin to the right of the content */
+    flex: 1;
+    margin-right: 20px;
+    font-size: 20px;
 }
 
 .breakfast-image {
-    position: relative; /* Enables positioning */
-    left: -10px; /* Adjust the value to move left */
+    position: relative;
+    left: -10px;
     top: -10px;
-    /* Adjust the radius for more roundness */
 }
 
 /* Lunch Container */
+.lunch {
+    display: flex;
+    flex-direction: row;
+}
+
+.lunch1, .lunch2 {
+    width: 50%;
+}
+
+.lunch1 img {
+    width: 100%;
+    height: auto;
+}
+
+.lunch2 {
+    padding: 20px;
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .lunch {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: flex-start; /* Align everything to the left */
+    }
+
+    .lunch1, .lunch2 {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .lunch1 img {
+        width: auto;
+    }
+
+    .lunch2 {
+        text-align: left; /* Ensure text aligns to the left */
+        padding: 10px; /* Adjust padding as needed */
+    }
+}
+
 .lunch-container {
-    display: flex;                    /* Use flexbox for layout */
-    justify-content: flex-end;      /* Align items to the start */
-    align-items: flex-start;          /* Align items to the start (top) */
-    margin: 20px 0;                  /* Optional: Add margin for spacing */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 20px 0;
 }
 
 .lunch-image {
-    margin-right: 20px;              /* Add space between the image and text */
-    width: 200px;                    /* Adjust the width as needed */
-    height: auto;                    /* Maintain aspect ratio */
+    margin-right: 20px;
+    width: 200px;
+    height: auto;
 }
 
 .lunch-content {
-    flex: 1;                         /* Allow the content to grow and take available space */
-    font-size: 20px;                /* Font size */
-    text-align: right;               /* Align text to the left */
+    flex: 1;
+    font-size: 20px;
+    text-align: right;
 }
 
-.lunch-content ul {
-    list-style-type: disc;           /* Set bullet type */
-    padding-left: 20px;              /* Add padding to the left for better appearance */
-    text-align: left;                      /* Remove default margin */
-}
-
-.lunch-content li {
-    margin-bottom: 10px;
-    text-align: right;             /* Space between list items */
-}
-
-
-/* Media Queries for Mobile Responsiveness */
+/* Responsive Styles for Mobile */
 @media (max-width: 768px) {
-    .breakfast-container {
-        flex-direction: column;  /* Stack elements vertically on small screens */
-        align-items: center;      /* Center items in the container */
-        text-align: center;       /* Center text for better presentation */
+    body {
+        min-width: 100%;
     }
 
-    .breakfast-content {
-        margin-right: 0;        /* Remove right margin */
-        margin-bottom: 20px;    /* Add some bottom margin */
+    h1, h2, h3, h4, .cut-heading, .cut-subheading {
+        font-size: 24px; /* Adjust header sizes */
     }
 
-    .breakfast-image {
-        width: auto;            /* Adjust width for better centering */
-        max-width: 100%;        /* Ensure the image doesn't exceed container width */
-        height: auto;           /* Maintain aspect ratio */
-        margin: 0 auto;         /* Center the image */
-        margin-left: 0;         /* Reset left margin for mobile */
+    .cut-description, .breakfast-content, .lunch2, .recipes {
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
     }
 
+    .cut-list, .recipes ul {
+        font-size: 18px;
+        padding-left: 10px;
+    }
 
+    .breakfast-container, .lunch-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-   
-       
+    .breakfast-image, .lunch1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .social-media-links, .footer-title, .footer-subtitle {
+        text-align: center;
+    }
 }
