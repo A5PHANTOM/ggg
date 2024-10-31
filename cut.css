@@ -223,57 +223,43 @@ h2, h3, h4 {
 
 /* Breakfast Image Styles */
 .breakfast2 img {
-    max-width: 100%; /* Responsive image size */
+    max-width: 60%; /* Responsive image size */
     height: auto; /* Maintain aspect ratio */
 }
 
 
 /* Lunch Container */
-/* Lunch Container */
 .lunch-container {
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
-    align-items: flex-start; /* Align items to the top */
-    margin: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .lunch1, .lunch2 {
-    width: 50%; /* Set to 50% to display side by side */
+    flex: 1;
 }
 
-.lunch1 img {
-    width: 100%;
-    height: auto;
+.lunch1 {
+    text-align: left;
 }
 
 .lunch2 {
-    padding: 20px;
-    
+    text-align: left;
+    padding-left: 20px; /* Optional, for some spacing */
 }
-
-/* Mobile Responsiveness */
+/* Mobile adjustments for lunch layout */
 @media (max-width: 768px) {
-    /* Ensure items are displayed from left to right */
     .lunch-container {
-        flex-direction: column; /* Stack items vertically for mobile */
-        align-items: center; /* Center the content */
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center-align text */
     }
 
-    .lunch2{
-        order: 1; /* Ensure text appears first */
-        width: 100%; /* Full width for each item */
-        text-align: center; /* Center-align text */
-        margin-bottom: 10px; /* Add some spacing between the items */
-    }
-    .lunch1{
-        order: 2; /* Ensure text appears first */
-        width: 100%; /* Full width for each item */
-        text-align: center; /* Center-align text */
-        margin-bottom: 10px; /* Add some spacing between the items */
+    .lunch1, .lunch2 {
+        width: 100%; /* Full width for each section */
+        margin-bottom: 15px; /* Add spacing between sections */
     }
 }
-
-
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -329,6 +315,7 @@ h2, h3, h4 {
 .dinner2 {
     flex: 1; /* Allows the image section to take available space */
 }
+
 
 @media (max-width: 768px) {
     /* Existing mobile adjustments */
@@ -430,6 +417,12 @@ h2, h3, h4 {
         width: 100%; /* Full width for each item */
         text-align: center; /* Center-align individual text */
     }
+     .before-bed2{
+        display: block; /* Ensures the image behaves like a block element */
+        margin-left: 0; /* Reset margin to align to the left */
+        margin-right: auto; /* Automatically adjusts right margin */
+        width: auto; /* Optional: adjust the width as needed */
+     }
 }
 
 
@@ -457,7 +450,7 @@ img {
     max-height: 80vh;  /* Ensure the image doesn’t exceed the viewport height */
     object-fit: cover; /* Scale the image to maintain aspect ratio within the container */
     width: 100%;       /* Full width for smaller screens */
-    height: auto;      /* Adjust height proportionally */
+    height: auto;      /* Adjust height proportionally */ 
     border-radius: 20px; /* Optional: keeps the rounded corners */
   
 }
