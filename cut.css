@@ -116,7 +116,49 @@ h2, h3, h4 {
     margin: 400px auto 0;
     padding: 20px;
     width: 100%;
+    opacity: 0; /* Fully transparent initially */
+    transform: scale(0.9); /* Slightly smaller */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
 }
+/* Hover State */
+.cut-description:hover {
+    opacity: 1; /* Fully opaque */
+    transform: scale(1.05); /* Slightly larger */
+}
+/* Add this class to trigger fade-in */
+.fade-in {
+    opacity: 1; /* Fully opaque */
+    transform: scale(1); /* Normal size */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+}
+
+/* Animation for fade-in and scale-up */
+@keyframes fadeInScaleUp {
+    0% {
+        
+        transform: scale(0.5);
+    }
+    100% {
+        
+        transform: scale(1);
+    }
+}
+
+/* Class for adding the animation */
+.animate {
+    animation: fadeInScaleUp 0.5s ease forwards;
+}
+
+/* Add hover effect for elements */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
 
 .cutprninc-text {
     text-align: center;
@@ -127,12 +169,12 @@ h2, h3, h4 {
 
 .animated-text {
     font-size: 30px;
-    color: yellow;
+    color: grey;
     transition: color 0.5s ease;
 }
 
 .animated-text:hover {
-    color: white;
+    color: rgb(10, 9, 9);
 }
 
 .nav-link {
@@ -217,7 +259,14 @@ h2, h3, h4 {
         align-items: center; /* Center the content */
     }
 
-    .lunch1, .lunch2 {
+    .lunch2{
+        order: 1; /* Ensure text appears first */
+        width: 100%; /* Full width for each item */
+        text-align: center; /* Center-align text */
+        margin-bottom: 10px; /* Add some spacing between the items */
+    }
+    .lunch1{
+        order: 2; /* Ensure text appears first */
         width: 100%; /* Full width for each item */
         text-align: center; /* Center-align text */
         margin-bottom: 10px; /* Add some spacing between the items */
@@ -289,9 +338,19 @@ h2, h3, h4 {
         text-align: center; /* Align text to the center */
     }
 
-    .dinner1, .dinner2 {
+    .dinner1 {
         width: 100%; /* Full width for each item */
     }
+
+
+    .dinner2 {
+       
+        flex: 1;
+    max-width: 50%; /* Adjust width as needed */
+    margin-right: 280px;
+    }
+
+
 }
 
 /* New styles for snack1 and snack2 */
@@ -328,7 +387,13 @@ h2, h3, h4 {
         text-align: center; /* Center-align text */
     }
 
-    .snack1, .snack2 {
+    .snack1 {
+        order: 2;
+        width: 100%; /* Full width for each item */
+        text-align: center; /* Center-align individual text */
+    }
+    .snack2{
+        order: 1;
         width: 100%; /* Full width for each item */
         text-align: center; /* Center-align individual text */
     }
@@ -383,4 +448,16 @@ h2, h3, h4 {
 .additional-tips li {
     margin: 15px 0; /* Space between each tip */
     line-height: 1.5; /* Line height for readability */
+}
+
+
+
+img {
+    max-width: 100vw;  /* Make the image responsive to the viewport width */
+    max-height: 80vh;  /* Ensure the image doesn’t exceed the viewport height */
+    object-fit: cover; /* Scale the image to maintain aspect ratio within the container */
+    width: 100%;       /* Full width for smaller screens */
+    height: auto;      /* Adjust height proportionally */
+    border-radius: 20px; /* Optional: keeps the rounded corners */
+  
 }
