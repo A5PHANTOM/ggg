@@ -259,6 +259,12 @@ h2, h3, h4 {
         width: 100%; /* Full width for each section */
         margin-bottom: 15px; /* Add spacing between sections */
     }
+    .lunch1{
+        order: 2;
+    }
+    .lunch2{
+        order: 1;
+    }
 }
 
 /* Mobile Responsiveness */
