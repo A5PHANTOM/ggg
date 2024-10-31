@@ -34,6 +34,8 @@ h2, h3, h4 {
 
 .cut-principles {
     padding: 20px;
+    margin: 0 70px; /* Adds a 20px margin to the left and right */
+   
 }
 
 .cut-list {
@@ -111,9 +113,10 @@ h2, h3, h4 {
 }
 
 .cut-description {
+    
     text-align: left;
     font-size: 30px;
-    margin: 400px auto 0;
+    
     padding: 20px;
     width: 100%;
     opacity: 0; /* Fully transparent initially */
@@ -190,23 +193,40 @@ h2, h3, h4 {
 .breakfast-container {
     display: flex;
     justify-content: space-between; /* Adjusts spacing between breakfast items */
-    margin-top: 20px; /* Spacing above the breakfast section */
+    margin-top: 100px; /* Spacing above the breakfast section */
+    overflow: hidden; /* Prevents overflow issues */
 }
 
 .breakfast1 {
+    
+      background-color: #f0f0f0; /* Light grey background */
+      width: 300px; /* Adjust width as needed for a square */
+    height: 300px; /* Adjust height for a square */
     flex: 1; /* Allows the text section to take available space */
     text-align: left; /* Align text to the left */
     font-size: 20px; /* Match the font size with lunch and dinner */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding in the total width/height */
+    padding: 20px; /* Add padding for spacing within the box */
+    margin-bottom: 0; /* Adjust this if needed */
+    border-radius: 25px;
+
+
 }
 
 .breakfast2 {
+    
     flex: 1; /* Allows the image section to take available space */
     text-align: left; /* Align text to the left */
 }
 
-.breakfast1 h4 {
-    margin-top: 0; /* Adjust margin for headings */
+.breakfast-slide {
+    width: 100%;
+    height: auto;
+    display: block;
 }
+
 
 /* Responsive Styles for Mobile */
 @media (max-width: 768px) {
@@ -223,8 +243,11 @@ h2, h3, h4 {
 
 /* Breakfast Image Styles */
 .breakfast2 img {
-    max-width: 100%; /* Responsive image size */
+    max-width: 60%; /* Responsive image size */
     height: auto; /* Maintain aspect ratio */
+    margin-left: 30px;
+    margin-bottom:30px;
+    
 }
 
 
@@ -271,6 +294,7 @@ h2, h3, h4 {
         text-align: center; /* Center-align text */
         margin-bottom: 10px; /* Add some spacing between the items */
     }
+    
 }
 
 
@@ -324,10 +348,27 @@ h2, h3, h4 {
 
 .dinner1 {
     flex: 1; /* Allows the text section to take available space */
+    background-color: #f0f0f0; /* Light grey background */
+    width: 310px; /* Adjust width as needed for a square */
+    height: 510px; /* Adjust height for a square */
+    display: flex;
+    text-align: left; /* Align text to the left */
+    font-size: 20px; /* Match the font size with lunch and dinner */
+    margin-top: 30px;
+    box-sizing: border-box; /* Include padding in the total width/height */
+    padding: 20px; /* Add padding for spacing within the box */
+    margin-bottom: 0; /* Adjust this if needed */
+    border-radius: 25px;
 }
 
 .dinner2 {
     flex: 1; /* Allows the image section to take available space */
+    margin-top: 100px; /* Adjust this value to lower the image as needed */
+}
+.dinner2 img {
+    max-width: 100%; /* Adjusts image size to fit the container */
+    height: auto;
+    display: block;
 }
 
 @media (max-width: 768px) {
@@ -348,6 +389,8 @@ h2, h3, h4 {
         flex: 1;
     max-width: 50%; /* Adjust width as needed */
     margin-right: 280px;
+   
+    
     }
 
 
@@ -406,13 +449,25 @@ h2, h3, h4 {
     margin-top: 20px; /* Spacing above the dinner section */
 }
 
-.before-bed1, .before-bed2 {
-    flex: 1;
-    padding: 10px;
+.before-bed1 {
+    flex: 1; /* Allows the text section to take available space */
+    background-color: #f0f0f0; /* Light grey background */
+    width: 310px; /* Adjust width as needed for a square */
+    height: 260px; /* Adjust height for a square */
+    display: flex;
+    text-align: left; /* Align text to the left */
+    font-size: 20px; /* Match the font size with lunch and dinner */
+    margin-top: 30px;
+    box-sizing: border-box; /* Include padding in the total width/height */
+    padding: 20px; /* Add padding for spacing within the box */
+    margin-bottom: 0; /* Adjust this if needed */
+    border-radius: 25px;
 }
 
 .before-bed2 {
     text-align: left; /* Align text to the left */
+    flex: 1;
+    padding: 10px;
 }
 
 .before-bed2 h4 {
@@ -426,18 +481,45 @@ h2, h3, h4 {
         text-align: center; /* Center-align text */
     }
 
-    .before-bed1, .before-bed2 {
+    .before-bed1 {
         width: 100%; /* Full width for each item */
-        text-align: center; /* Center-align individual text */
+        text-align: left; /* Center-align individual text */
+    }
+     .before-bed2
+     {
+        width: 100%; /* Full width for each item */
+        text-align: center; /* Center text and items */
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items horizontally */
+     }
+     .image-container {
+        margin: 0 auto; /* Center the image container */
+    }
+    .image-container img {
+        max-width: 100%; /* Ensure the image does not exceed container width */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0; /* Reset margin */
     }
 }
 
 
 
+
 .additional-tips {
+   
     text-align: center; /* Center the tips */
     margin-top: 80px; /* Space above the tips section */
     font-size: 20px; /* Font size for the tips */
+
+}
+.additional-tips h2 {
+    animation: colorChange 3s infinite; /* Change every second */
+}
+@keyframes colorChange {
+    0% { color: black; }
+    50% { color: yellow; }
+    100% { color: black; }
 }
 
 .additional-tips ul {
@@ -460,4 +542,74 @@ img {
     height: auto;      /* Adjust height proportionally */
     border-radius: 20px; /* Optional: keeps the rounded corners */
   
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+
+
+.breakfast-container,
+.dinner-container,
+.before-bed-container {
+    opacity: 0; /* Start hidden */
+    transform: translateY(30px); /* Start slightly below */
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Faster transition effect */
+}
+
+.breakfast-container.animate,
+.dinner-container.animate,
+.before-bed-container.animate {
+    opacity: 1; /* Show the element */
+    transform: translateY(0); /* Slide to original position */
+}
+
+/* Optional: Media Query for mobile adjustments */
+@media (max-width: 768px) {
+    .breakfast-container,
+    .dinner-container,
+    .before-bed-container {
+        transform: translateY(20px); /* Less distance for mobile */
+    }
+}
+
+
+
+.breakfast-container {
+    opacity: 0; /* Start hidden */
+    transform: translateY(30px); /* Start slightly below */
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Faster transition effect */
+}
+
+.breakfast-container.animate {
+    opacity: 1; /* Show the element */
+    transform: translateY(0); /* Slide to original position */
+}
+
+.dinner-container {
+    opacity: 0; /* Start hidden */
+    transform: translateY(30px); /* Start slightly below */
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Faster transition effect */
+}
+
+.dinner-container.animate {
+    opacity: 1; /* Show the element */
+    transform: translateY(0); /* Slide to original position */
+}
+
+.before-bed-container {
+    opacity: 0; /* Start hidden */
+    transform: translateY(30px); /* Start slightly below */
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Faster transition effect */
+}
+
+.before-bed-container.animate {
+    opacity: 1; /* Show the element */
+    transform: translateY(0); /* Slide to original position */
 }
