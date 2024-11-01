@@ -251,6 +251,7 @@ h2, h3, h4 {
     .lunch-container {
         flex-direction: column; /* Stack elements vertically */
         text-align: center; /* Center-align text */
+        overflow: hidden;
     }
 
     .lunch1, .lunch2 {
@@ -325,6 +326,7 @@ h2, h3, h4 {
         flex-direction: column;
         align-items: center; /* Centers the content */
         text-align: center; /* Align text to the center */
+        overflow: hidden;
     }
 
     .dinner1 {
@@ -344,6 +346,7 @@ h2, h3, h4 {
     justify-content: flex-end;
     align-items: flex-start;
     margin: 20px 0;
+    overflow: hidden;
 }
 
 .snack1 {
