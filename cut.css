@@ -250,13 +250,16 @@ h2, h3, h4 {
 @media (max-width: 768px) {
     .lunch-container {
         flex-direction: column; /* Stack elements vertically */
-        text-align: center; /* Center-align text */
+        text-align: left; /* Center-align text */
         overflow: hidden;
     }
 
-    .lunch1, .lunch2 {
+     .lunch2 {
         width: 100%; /* Full width for each section */
         margin-bottom: 15px; /* Add spacing between sections */
+    }
+    .lunch1{
+        width: 50%;
     }
     
     .lunch2 {
