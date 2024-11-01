@@ -260,6 +260,7 @@ h2, h3, h4 {
     }
     .lunch1{
         width: 50%;
+          overflow:hidden;
     }
     
     .lunch2 {
