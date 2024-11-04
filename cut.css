@@ -221,7 +221,7 @@ h2, h3, h4 {
 
 /* Breakfast Image Styles */
 .breakfast2 img {
-    max-width: 60%; /* Responsive image size */
+    max-width: 100%; /* Responsive image size */
     height: auto; /* Maintain aspect ratio */
 }
 
