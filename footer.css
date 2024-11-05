@@ -3,36 +3,32 @@
     height: 400px; /* Set height of the footer */
     padding: 20px; /* Add padding for better spacing */
     display: flex; /* Enable flexbox */
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Align items to the top */
 }
 
 .footer-content {
     display: flex; /* Use flexbox for layout */
-    justify-content: flex-start; /* Align content to the left */
+    justify-content: space-between; /* Space out sections evenly */
     width: 100%; /* Use full width */
 }
 
 .footer-left,
 .footer-center,
-.footer-right {
+.footer-company,
+.footer-community {
     display: flex; /* Ensure items can be aligned */
     flex-direction: column; /* Stack items vertically */
     color: white; /* Set text color to white */
-    align-items: flex-start; /* Align items to the left */
-    margin-right: 30px; /* Add space between sections */
+    margin-right: 30px; /* Space between sections */
 }
 
-.footer-label {
+
+.footer-label,
+.footer-community-label {
     font-size: large; /* Set a uniform font size for all labels */
     margin-bottom: 20px; /* 20px gap below each label */
-    color: yellow; /* Set label color to yellow */
+    color: white; /* Set label color to white */
     text-align: left; /* Align text to the left */
-}
-
-/* No need for right margin since items are aligned to left */
-.footer-left .footer-label:not(:last-child) {
-    margin-bottom: 30px; /* Add 30px gap below each label except the last */
 }
 
 .footer-links,
@@ -60,39 +56,23 @@
     text-decoration: none; /* Ensure underline remains removed */
 }
 
-/* COMMUNITY Section */
-.footer-community {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
+/* Additional styles for better alignment */
+.footer-left, .footer-center, .footer-company, .footer-community {
     align-items: flex-start; /* Align items to the left */
-    color: white; /* Set text color to white */
-    margin-top: 20px; /* Add some spacing above the community section */
 }
 
-.footer-community .footer-community-label {
-    font-size: large; /* Set a uniform font size for community label */
-    margin-bottom: 20px; /* 20px gap below the community label */
+.footer-tools{
+    font-size: large; /* Set a uniform font size for tools label */
+    margin-top: 50px; /* Increase gap before the TOOLS section */
+    color: white; /* Set label color to white */
     text-align: left; /* Align text to the left */
 }
 
-/* Style for title and slogan */
+
 .footer-title {
-    font-size: x-large; /* Adjust title size */
-    color: yellow; /* Color of the title */
-}
-
-.footer-slogan {
-    font-size: medium; /* Adjust slogan size */
-    color: white; /* Slogan color */
-    margin-top: 5px; /* Spacing above slogan */
-}
-
-/* Contact info and social icons */
-.contact-info,
-.phone-info {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center icons with text */
-    margin-bottom: 10px; /* Space between contact entries */
+    font-size: 2.5em; /* Adjust the size as needed */
+    color: yellow; /* Keep the color as yellow */
+    margin-bottom: 10px; /* Add some space below the title if needed */
 }
 
 .social-icons {
@@ -106,9 +86,31 @@
     font-size: 1.5em; /* Size of social icons */
 }
 
-/* General reset for links */
-.footer-links,
-.footer-community-links {
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
+
+@media (max-width: 768px) {
+    .footer {
+        height: auto; /* Allow height to adjust based on content */
+        text-align: center; /* Center text in the footer */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        width: 100%; /* Ensure full width */
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-company,
+    .footer-community {
+        margin-right: 0; /* Remove right margin for mobile view */
+        margin-bottom: 20px; /* Add space between stacked items */
+        width: 100%; /* Ensure full width for each section */
+        text-align: center; /* Center text in each section */
+    }
+
+    /* Adjust icon sizes if needed */
+    .social-icons a {
+        font-size: 2em; /* Increase icon size for better visibility */
+    }
 }
