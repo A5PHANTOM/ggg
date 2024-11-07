@@ -6,6 +6,7 @@ body {
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
+
 h1 {
     color: yellow;
 }
@@ -46,31 +47,7 @@ h2, h3, h4 {
     margin-bottom: 8px;
 }
 
-/* Responsive Footer Styles */
-.footer-title {
-    font-size: 24px;
-    text-align: center;
-}
 
-.footer-link {
-    text-decoration: none;
-    color: white;
-}
-
-.footer-subtitle {
-    font-size: 18px;
-}
-
-.social-media-links {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.social-icon {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-}
 
 /* Suggested Recipes */
 .recipes {
@@ -99,6 +76,8 @@ h2, h3, h4 {
 .navbar {
     background-color: rgba(217, 217, 217, 0.8);
 }
+/* For the hamburger icon lines */
+
 
 .cut-background {
     background-image: url('assets/bg1.png');
@@ -238,8 +217,10 @@ h2, h3, h4 {
 }
 
 .lunch1 {
+    
     text-align: left;
 }
+
 
 .lunch2 {
     text-align: left;
@@ -260,7 +241,7 @@ h2, h3, h4 {
     }
     .lunch1{
         width: 120%;
-          overflow:hidden;
+        overflow:hidden;
     }
     
     .lunch2 {
@@ -304,9 +285,7 @@ h2, h3, h4 {
         height: auto;
     }
 
-    .social-media-links, .footer-title, .footer-subtitle {
-        text-align: center;
-    }
+    
 }
 
 /* Dinner Container */
@@ -445,4 +424,17 @@ h2, h3, h4 {
 
 .additional-tips li {
     margin-bottom: 8px;
+}
+
+/* Ensure the logo stays on the right side */
+.logo-right {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
 }
