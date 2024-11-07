@@ -4,53 +4,31 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black; /* Fully black background */
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Ensure it's above all other content */
+    z-index: 9999;
 }
+
 .hidden {
-    display: none; /* Hide element */
+    display: none;
 }
 
 .loading-logo {
-    width: 150px; /* Adjust the width of the logo */
-    height: auto; /* Maintain aspect ratio */
-    animation: blink 2s infinite; /* Apply blink animation */
-    box-shadow: 0 0 20px #fff; /* Initial glow */
+    width: 300px;
+    height: auto;
+    animation: glow 4s infinite;
+    filter: drop-shadow(0 0 20px #fff); /* Glow around the logo */
 }
 
-@keyframes blink {
-    0% {
-        opacity: 1; /* Fully visible */
-        box-shadow: 0 0 20px #fff; /* Initial glow */
+@keyframes glow {
+    0%, 100% {
+        opacity: 1;
+        filter: drop-shadow(0 0 20px #fff); /* Initial glow */
     }
     50% {
-        opacity: 0; /* Invisible */
-        box-shadow: 0 0 40px #fff; /* Increase glow */
-    }
-    100% {
-        opacity: 1; /* Fully visible */
-        box-shadow: 0 0 20px #fff; /* Return to initial glow */
+        opacity: 0.5;
+        filter: drop-shadow(0 0 40px #fff); /* Enhanced glow */
     }
 }
-
-
-.vertical-text {
-    color: black; /* Text color */
-    font-size: 120px; /* Increased font size */
-    font-weight: bold; /* Makes the text bold */
-    writing-mode: vertical-rl; /* Rotate text vertically */
-    transform: rotate(180deg); /* Flip the text direction */
-    margin: 0 70px; /* Increased space between text and logo */
-    letter-spacing: 5px; /* Increased spacing between letters */
-    text-shadow: 
-    -5px -5px 0 orange,  
-        5px -5px 0 orange,
-        -5px 5px 0 orange,
-        5px 5px 0 orange; /* Very thick orange border effect */
-        
-        
-}
- 
