@@ -12,6 +12,13 @@ body {
     font-family: 'Zen Dots', sans-serif; /* Set Zen Dots font */
     color: black; /* Color for navbar items */
 }
+.navbar .navbar-logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    position: absolute;
+    right: 20px; /* Distance from the right edge */
+    top: 10px; /* Distance from the top edge */
+}
 
 
 .header {
