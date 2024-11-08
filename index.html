@@ -1,86 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Solanel:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=HeadingProTreble-Heavy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Website</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="homestyles.css"> <!-- Custom styles -->
-    <link rel="stylesheet" href="loading.css"> <!-- Custom styles -->
-    <link rel="stylesheet" href="fitness.css"> <!-- Include fitness.css for styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet"> <!-- Import Zen Dots font -->
-    <link rel="stylesheet" href="footer.css"> <!-- Custom styles -->
+    <title>Nutrition - Fitness Website</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-        /* Additional styles can be added here if needed */
-        .navbar-nav .nav-link {
-            font-family: 'Zen Dots', sans-serif; /* Set Zen Dots font */
-            color: #333;
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0; /* Remove default margin */
         }
-
-        .navbar {
-            width: 100%; /* Make the navbar full width */
+        .content {
+            flex: 1;
+            margin-bottom: 100px; /* Add space at the bottom for the footer */
         }
+        
     </style>
-</head> 
+</head>
 <body>
     <div class="loading-screen" id="loading-screen">
+      
+        <img src="assets/BEARITT (1).svg" alt="FitLife Logo" class="loading-logo">
        
-        <img src="assets/logo1.webp" alt="FitLife Logo" class="loading-logo"> <!-- Logo centered on loading screen --> 
-       
-     
+        <h1></h1>
     </div>
-
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D9D9D9;">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nutrition.html">NUTRITION</a> <!-- Redirects to the nutrition page -->
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Classes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Fitness.html">FITNESS</a> <!-- Redirects to the fitness page -->
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <div class="video-section">
-        <video class="intro-video" autoplay loop muted playsinline>
-            <source src="assets/intro.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <div class="drawer" id="drawer">
+    
+    <!-- Drawer Menu -->
+    <div id="drawer" class="drawer">
         <a href="javascript:void(0)" class="close-btn" onclick="toggleDrawer()">&times;</a>
-        <a href="#">Home</a>
-        <a href="nutrition.html">NUTRITION</a> <!-- Redirects to the nutrition page -->
+        <a href="index.html">HOME</a>
+        <a href="nutrition.html">NUTRITION</a>
         <a href="#">Classes</a>
         <a href="#">Contact</a>
-        <a href="Fitness.html">FITNESS</a> <!-- Redirects to the fitness page -->
+        <a href="Fitness.html">FITNESS</a>
     </div>
 
-    <div class="content-area hidden" id="content-area">
-        <h1>Join the Fitness Revolution</h1>
-        <p>Access all our gyms and online classes for one low price!</p>
-        <a href="login.html"><button class="cta-button">Join Now</button></a>
+    <div class="content">
+        <section class="upper-photo" style="position: relative;">
+            <img src="assets/demo.webp" alt="Upper Photo" style="width: 100%; height: auto;">
+            <div class="navbar-toggler hamburger" onclick="toggleDrawer()">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+            <h1 class="nutrition-heading">NUTRITION PLANS</h1>
+        </section>
+
+        <section class="nutrition-hero">
+            <div class="white-box">
+                <div class="inner-white-box vegan">
+                    <div class="text-content">
+                        <h2>VEGAN DIET PLAN</h2>
+                        <h5 style="margin: 0; color: gray;">personalized diet plan for vegans</h5>
+                    </div>
+                </div>
+
+                <div class="inner-white-box non-veg">
+                    <div class="text-content">
+                        <h2>NON-VEG DIET PLAN</h2>
+                        <h5 style="margin: 0; color: gray;">personalized diet plan for non-vegans</h5>
+                    </div>
+                </div>
+
+                <div class="inner-white-box bulk">
+                    <div class="text-content">
+                        <h2>BULK DIET PLAN</h2>
+                        <h5 style="margin: 0; color: gray;">diet plan for gaining muscle mass</h5>
+                    </div>
+               
+                </div>
+
+                <div class="inner-white-box cut">
+                    <div class="text-content">
+                        <h2><a href="cut.html" style="text-decoration: none; color: white;">CUT DIET PLAN</a></h2>
+                        <h5 style="margin: 0; color: gray;">diet plan for weight loss</h5>
+                    </div>
+                </div>
+                
+                    
+                </div>
+
+                <div class="inner-white-box women">
+                    <div class="text-content">
+                        <h2>DIET PLAN FOR WOMEN</h2>
+                        <h5 style="margin: 0; color: gray;">personalized diet for women</h5>
+                    </div>
+                    <div class="image-content">
+                        <img src="assets/women.jpg" alt="Diet Plan for Women" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="inner-white-box maintain">
+                    <div class="text-content">
+                        <h2>MAINTAIN DIET PLAN</h2>
+                        <h5 style="margin: 0; color: gray;">diet plan for maintaining weight</h5>
+                    </div>
+                    <div class="image-content">
+                        <img src="assets/maintain.jpg" alt="Maintain Diet Plan" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- Footer Wrapper for Full Width Background -->
@@ -155,9 +192,8 @@
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         function toggleDrawer() {
             var drawer = document.getElementById("drawer");
@@ -168,19 +204,10 @@
             }
         }
 
-        // Show loading screen for 3 seconds
+        // Show loading screen until the entire page is fully loaded
         setTimeout(function() {
             document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
-            document.getElementById("content-area").classList.remove("hidden"); // Show content area
-        }, 3000); // 3000 milliseconds = 3 seconds
-
-
-        
-    
- 
-
+        }, 6000); // 3000 milliseconds = 3 seconds
     </script>
-
-
 </body>
 </html>
