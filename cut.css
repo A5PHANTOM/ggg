@@ -410,7 +410,7 @@ h2, h3, h4 {
 .additional-tips {
     margin-top: 20px;
     padding: 10px;
-    text-align: left; /* Align text to the left */
+    text-align: center; /* Align text to the left */
 }
 
 .additional-tips h4 {
@@ -420,10 +420,12 @@ h2, h3, h4 {
 .additional-tips ul {
     list-style-type: disc;
     margin-left: 20px;
+    text-align: left; /* Align the text to the left */
 }
 
 .additional-tips li {
     margin-bottom: 8px;
+    font-size: large;
 }
 
 /* Ensure the logo stays on the right side */
