@@ -1,0 +1,167 @@
+/* Hamburger Icon */
+.hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Sidebar (Navbar) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden on mobile */
+    height: 100%;
+    width: 250px; /* Sidebar width on mobile */
+    background-color: black; /* Sidebar background color */
+    transition: left 0.3s ease;
+    padding-top: 60px;
+}
+
+.sidebar.active {
+    left: 0; /* Show sidebar when active */
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 20px;
+    text-align: left; /* Align text to left */
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Desktop Navbar - Full Width, Left-Aligned Items */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none; /* Hide hamburger on larger screens */
+    }
+
+    .sidebar {
+        position: static; /* Sidebar is always visible */
+        width: 100%; /* Set the navbar width to 100% */
+        height: auto; /* Let the height be based on content */
+        background-color: black; /* Set background color to black */
+        padding-top: 0;
+        display: flex; /* Display navbar in a row */
+        justify-content: flex-start; /* Align items to the left */
+        align-items: center; /* Center items vertically */
+    }
+
+    .sidebar nav ul {
+        display: flex; /* Horizontally align items */
+        justify-content: flex-start; /* Align items to the left */
+        margin: 0; /* Remove default margin */
+        padding: 0;
+    }
+
+    .sidebar nav ul li {
+        padding: 15px 20px; /* Adjust padding for navbar items */
+    }
+
+    .sidebar nav ul li a {
+        color: white; /* Set link color to white */
+        font-size: 18px;
+    }
+
+    .close-btn {
+        display: none; /* Hide close button in desktop mode */
+    }
+}
+
+/* Mobile Sidebar - Black Navbar */
+@media (max-width: 767px) {
+    .close-btn {
+        display: block; /* Show close button in mobile mode */
+    }
+}
+body {
+    font-family: 'Zen Dots', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #007BFF;
+}

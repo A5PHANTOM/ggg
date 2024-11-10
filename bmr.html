@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BMR Calculator</title>
+        <link rel="stylesheet" href="bmr.css"> <!-- Link to your BMR-specific CSS -->
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="footer.css"> <!-- Footer CSS -->
+        
+        <!-- Correct FontAwesome link (removed duplicate) -->
+       <!-- FontAwesome CDN (alternative) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+
+
+    
+<body>
+  <!-- Hamburger Menu Icon -->
+  <div class="hamburger" id="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+
+ <!-- Sidebar Menu (Hidden Initially) -->
+ <div class="sidebar" id="sidebar">
+    <button class="close-btn" id="close-btn">&times;</button>
+    <nav>
+        <ul>
+            <li><a href="index.html">BEARITT</a></li>
+            <li><a href="fitness.html">FITNESS</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+    <div class="container">
+        <h1>BMR Calculator</h1>
+        <form id="bmr-form">
+            <label for="gender">Select Gender</label>
+            <select id="gender" required>
+                <option value="">--Select--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            
+            <label for="weight">Enter your weight (kg)</label>
+            <input type="number" id="weight" required placeholder="Enter weight in kg">
+
+            <label for="height">Enter your height (cm)</label>
+            <input type="number" id="height" required placeholder="Enter height in cm">
+
+            <label for="age">Enter your age</label>
+            <input type="number" id="age" required placeholder="Enter your age">
+
+            <button type="submit">Calculate BMR</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <!-- Footer Wrapper for Full Width Background -->
+    <div class="footer-wrapper">
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-title">BEARITT
+                        
+                    </div>
+                    
+                    <p class="footer-slogan">Join us on our mission to make 50 million people fit!</p>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope mail-icon"></i>
+                        <span class="email">bearitt.fit@gmail.com</span>
+                    </div>
+                    <div class="phone-info">
+                        <i class="fas fa-phone phone-icon"></i>
+                        <span class="phone-number">+91 9846-66-55-99</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/YourPage" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/YourProfile" target="_blank">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <a href="https://twitter.com/YourProfile" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/YourProfile" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="footer-center">
+                    <div class="footer-label">SERVICES</div>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">FITNESS</a></li>
+                        <li><a href="#" class="footer-link">NUTRITION</a></li>
+                    </ul>
+                    <h4 class="footer-tools">TOOLS</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">BMR Calculator</a></li>
+                        <li><a href="#" class="footer-link">Macro Calculator</a></li>
+                        <li><a href="#" class="footer-link">Body Fat Calculator</a></li>
+                        <li><a href="#" class="footer-link">1RM Calculator</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-company">
+                    <div class="footer-label">COMPANY</div>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">ABOUT US</a></li>
+                        <li><a href="#" class="footer-link">HELP</a></li>
+                        <li><a href="#" class="footer-link">CONTACT US</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-community">
+                    <div class="footer-community-label">COMMUNITY</div>
+                    <ul class="footer-community-links">
+                        <li><a href="#" class="footer-community-link">Discord Channel</a></li>
+                        <li><a href="#" class="footer-community-link">Telegram Channel</a></li>
+                        <li><a href="#" class="footer-community-link">WhatsApp Group</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="bmr.js"></script> <!-- Link to your BMR calculation logic -->
+    <script>
+        // JavaScript for Hamburger Toggle
+        const hamburger = document.getElementById('hamburger');
+        const sidebar = document.getElementById('sidebar');
+        const closeBtn = document.getElementById('close-btn');
+
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    </script>
+
+</body>
+</html>
