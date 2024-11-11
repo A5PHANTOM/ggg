@@ -1,0 +1,68 @@
+/* Apply Zen Dot to body text */
+body {
+  font-family: 'Zen Dots', sans-serif;
+}
+
+/* Apply Zen Dot to other specific elements (e.g., headers) */
+h1, h2, h3, p {
+  font-family: 'Zen Dots', sans-serif;
+}
+
+/* Ensure buttons and links also use Zen Dot font */
+.nav-link, .card-title, .btn {
+  font-family: 'Zen Dots', sans-serif;
+}
+
+.hero {
+  background-image: url('images/nutrition-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.jumbotron {
+  background-image: url('assets/bulkdemo.webp'); /* Replace with the path to your image */
+    background-size: cover;  /* Ensures the image covers the full section */
+    background-position: center; /* Centers the image */
+    color: #fff;  /* White text color for contrast */
+    padding: 100px 20px;  /* Adjust padding for desired spacing */
+    text-align: center; /* Center-align the text */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* Set a fixed height for the cards */
+.card {
+  height: 400px; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1; /* Ensures content stretches to fill the remaining space */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Optional: Adjust title size */
+  margin-bottom: 15px; /* Adds space between title and text */
+}
+
+.card-text {
+  flex-grow: 1; /* Makes sure text content stretches to fill the card body */
+}
+
+/* Ensure the image fits properly inside the card */
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}

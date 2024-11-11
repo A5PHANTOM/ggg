@@ -1,132 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Solanel:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=HeadingProTreble-Heavy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrition - Fitness Website</title>
-
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="loading.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0; /* Remove default margin */
-        }
-        .content {
-            flex: 1;
-            margin-bottom: 100px; /* Add space at the bottom for the footer */
-        }
-        
-    </style>
-</head>
-<body>
-    <div class="loading-screen" id="loading-screen">
-      
-        <img src="assets/BEARITT (1).svg" alt="FitLife Logo" class="loading-logo">
-       
-        <h1></h1>
-    </div>
+    <title>Nutrition - [Your Fitness Website]</title>
     
-    <!-- Drawer Menu -->
-    <div id="drawer" class="drawer">
-        <a href="javascript:void(0)" class="close-btn" onclick="toggleDrawer()">&times;</a>
-        <a href="index.html">HOME</a>
-        <a href="nutrition.html">NUTRITION</a>
-        <a href="#">Classes</a>
-        <a href="#">Contact</a>
-        <a href="Fitness.html">FITNESS</a>
-    </div>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Zen Dot Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
-    <div class="content">
-        <section class="upper-photo" style="position: relative;">
-            <img src="assets/demo.webp" alt="Upper Photo" style="width: 100%; height: auto;">
-            <div class="navbar-toggler hamburger" onclick="toggleDrawer()">
-                <span class="bar1"></span>
-                <span class="bar2"></span>
-                <span class="bar3"></span>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="nutrition.css">
+    <!-- Link to Footer CSS -->
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <a class="navbar-brand" href="index.html">BEARITT</a>
+            
+            <!-- Navbar Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar Links (Left-aligned in mobile mode) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ml-lg-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="workouts.html" class="nav-link">Workouts</a></li>
+                    <li class="nav-item"><a href="nutrition.html" class="nav-link active">Nutrition</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
             </div>
-            <h1 class="nutrition-heading">NUTRITION PLANS</h1>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <!-- Hero Section -->
+        <section class="jumbotron text-center bg-light">
+            <h1 class="display-4">Optimize Your Diet for Peak Performance</h1>
+            <p class="lead">Discover meal plans, healthy recipes, and nutrition tips tailored for your fitness goals.</p>
         </section>
 
-        <section class="nutrition-hero">
-            <div class="white-box">
-                <div class="inner-white-box vegan">
-                    <div class="text-content">
-                        <h2>VEGAN DIET PLAN</h2>
-                        <h5 style="margin: 0; color: gray;">personalized diet plan for vegans</h5>
+        <!-- Meal Plans Section -->
+        <section class="meal-plans my-5">
+            <h2 class="text-center text-success">Meal Plans</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/womendiet.webp" class="card-img-top" alt="Women's Diet Plan Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Women's Diet Plan</h3>
+                            <p class="card-text">Tailored nutrition plan for women to support overall wellness and fitness goals.</p>
+                            <a href="#" class="btn btn-success">Learn More</a>
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/bulkdiet.webp" class="card-img-top" alt="Bulk Diet Plan Image">
 
-                <div class="inner-white-box non-veg">
-                    <div class="text-content">
-                        <h2>NON-VEG DIET PLAN</h2>
-                        <h5 style="margin: 0; color: gray;">personalized diet plan for non-vegans</h5>
+                        <div class="card-body">
+                            <h3 class="card-title">Bulk Diet Plan</h3>
+                            <p class="card-text">A high-calorie, nutrient-dense meal plan designed for muscle growth and bulking up.</p>
+                            <a href="bulk.html" class="btn btn-success">Learn More</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="inner-white-box bulk">
-                    <div class="text-content">
-                       <h2><a href="bulk.html" style="text-decoration: none; color: white;">BULK DIET PLAN</a></h2>
-                        <h5 style="margin: 0; color: gray;">diet plan for gaining muscle mass</h5>
-                    </div>
-               
-                </div>
-
-                <div class="inner-white-box cut">
-                    <div class="text-content">
-                        <h2><a href="cut.html" style="text-decoration: none; color: white;">CUT DIET PLAN</a></h2>
-                        <h5 style="margin: 0; color: gray;">diet plan for weight loss</h5>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/vegan.webp" class="card-img-top" alt="Vegan Diet Plan Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Vegan Plan</h3>
+                            <p class="card-text">Plant-based nutrition to fuel your workouts sustainably.</p>
+                            <a href="#" class="btn btn-success">Learn More</a>
+                        </div>
                     </div>
                 </div>
-                
-                    
+            </div>
+            <div class="row mt-4">
+                <!-- Keto Diet Plan -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/cuttingdiet.webp" class="card-img-top" alt="Cutting Diet Plan Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Cutting Diet Plan</h3>
+                            <p class="card-text">A low-calorie, high-protein meal plan designed to help shed fat while maintaining muscle.</p>
+                            <a href="cut.html" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="inner-white-box women">
-                    <div class="text-content">
-                        <h2>DIET PLAN FOR WOMEN</h2>
-                        <h5 style="margin: 0; color: gray;">personalized diet for women</h5>
-                    </div>
-                    <div class="image-content">
-                        <img src="assets/women.jpg" alt="Diet Plan for Women" class="img-fluid">
+        
+                <!-- Intermittent Fasting Plan -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/intermittentfasting.webp" class="card-img-top" alt="Intermittent Fasting Plan Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Intermittent Fasting</h3>
+                            <p class="card-text">A diet plan based on cycles of fasting and eating for improved metabolism and fat loss.</p>
+                            <a href="#" class="btn btn-success">Learn More</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="inner-white-box maintain">
-                    <div class="text-content">
-                        <h2>MAINTAIN DIET PLAN</h2>
-                        <h5 style="margin: 0; color: gray;">diet plan for maintaining weight</h5>
-                    </div>
-                    <div class="image-content">
-                        <img src="assets/maintain.jpg" alt="Maintain Diet Plan" class="img-fluid">
+        
+                <!-- High-Protein Plan -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/highprotein.webp" class="card-img-top" alt="High-Protein Diet Plan Image">
+                        <div class="card-body">
+                            <h3 class="card-title">High-Protein Plan</h3>
+                            <p class="card-text">A protein-rich diet designed to support muscle building and recovery.</p>
+                            <a href="#" class="btn btn-success">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
 
-    <!-- Footer Wrapper for Full Width Background -->
- <div class="footer-wrapper">
+        <!-- Recipes Section -->
+        <section class="recipes my-5">
+            <h2 class="text-center text-success">Healthy Recipes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/smoothieboost.webp" class="card-img-top" alt="Smoothie Boost Image">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Smoothie Boost</h3>
+                            <p class="card-text">Start your day with a refreshing and energy-boosting smoothie.</p>
+                            <a href="#" class="btn btn-success">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/snacks.webp" class="card-img-top" alt="Snacks Image">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Healthy Snacks</h3>
+                            <p class="card-text">Quick and easy snack ideas for energy throughout the day.</p>
+                            <a href="#" class="btn btn-success">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">Smoothie Boost</h3>
+                            <p class="card-text">Start your day with a refreshing and energy-boosting smoothie.</p>
+                            <a href="#" class="btn btn-success">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="tips my-5">
+            <h2 class="text-center text-success">Nutrition Tips</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Stay hydrated by drinking at least 8 glasses of water daily.</li>
+                <li class="list-group-item">Incorporate a mix of macronutrients in every meal.</li>
+                <li class="list-group-item">Plan your meals ahead to avoid unhealthy choices.</li>
+                <li class="list-group-item">Listen to your body's hunger and fullness cues.</li>
+            </ul>
+        </section>
+    </main>
+
+   <!-- Footer Wrapper for Full Width Background -->
+   <div class="footer-wrapper">
     <div class="footer">
         <div class="footer-content">
             <div class="footer-left">
                 <div class="footer-title">BEARITT
-                    <!-- <img src="assets/BEARITT (1).svg" alt="Logo" class="logo-img"> -->
+                   
                 </div>
                 
                 <p class="footer-slogan">Join us on our mission to make 50 million people fit!</p>
@@ -162,7 +215,7 @@
                 </ul>
                 <h4 class="footer-tools">TOOLS</h4>
                 <ul class="footer-links">
-                    <li><a href="#" class="footer-link">BMR Calculator</a></li>
+                    <li><a href="bmr.html" class="footer-link">BMR Calculator</a></li>
                     <li><a href="#" class="footer-link">Macro Calculator</a></li>
                     <li><a href="#" class="footer-link">Body Fat Calculator</a></li>
                     <li><a href="#" class="footer-link">1RM Calculator</a></li>
@@ -172,7 +225,7 @@
             <div class="footer-company">
                 <div class="footer-label">COMPANY</div>
                 <ul class="footer-links">
-                    <li><a href="#" class="footer-link">ABOUT US</a></li>
+                    <li><a href="#" class="footer-link">OUR STORY</a></li>
                     <li><a href="#" class="footer-link">HELP</a></li>
                     <li><a href="#" class="footer-link">CONTACT US</a></li>
                 </ul>
@@ -181,33 +234,19 @@
             <div class="footer-community">
                 <div class="footer-community-label">COMMUNITY</div>
                 <ul class="footer-community-links">
+                    <li><a href="#" class="footer-community-link">Our Community</a></li>
                     <li><a href="#" class="footer-community-link">Discord Channel</a></li>
                     <li><a href="#" class="footer-community-link">Telegram Channel</a></li>
                     <li><a href="#" class="footer-community-link">WhatsApp Group</a></li>
-                </ul>
+                </ul> 
             </div>
         </div>
     </div>
-    
+</footer>
 
-    </footer>
-
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function toggleDrawer() {
-            var drawer = document.getElementById("drawer");
-            if (drawer.style.width === "250px") {
-                drawer.style.width = "0";
-            } else {
-                drawer.style.width = "250px";
-            }
-        }
-
-        // Show loading screen until the entire page is fully loaded
-        setTimeout(function() {
-            document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
-        }, 6000); // 3000 milliseconds = 3 seconds
-    </script>
+    <!-- Bootstrap JS (for interactive components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
