@@ -66,3 +66,46 @@ footer {
   height: 200px; /* Adjust the height as needed */
   object-fit: cover; /* Ensures the image covers the area without distortion */
 }
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  /* Navbar adjustments */
+  .navbar-brand {
+      font-size: 1.5rem;
+  }
+
+  .navbar-nav .nav-link {
+      font-size: 1rem;
+      padding: 8px 5px;
+  }
+
+  /* Jumbotron text */
+  .jumbotron h1 {
+      font-size: 1.8rem;
+  }
+  
+  .jumbotron p {
+      font-size: 1rem;
+  }
+
+  /* Cards layout */
+  .meal-plans .card, .recipes .card {
+      margin: 10px 0;
+  }
+
+  /* Responsive card titles and text */
+  .card-title {
+      font-size: 1.2rem;
+  }
+
+  .card-text {
+      font-size: 0.9rem;
+  }
+
+  /* Tips Section */
+  .tips ul.list-group {
+      font-size: 0.9rem;
+  }
+
+
+}
