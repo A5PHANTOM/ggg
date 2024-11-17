@@ -15,13 +15,13 @@ h2, h3, h4 {
 }
 
 .cut-subheading {
-    font-size: 32px;
+    font-size: 26px;
     text-align: center;
     margin-top: 20px;
 }
 
 .cut-heading {
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     padding: 15px;
 }
@@ -38,7 +38,7 @@ h2, h3, h4 {
 }
 
 .cut-list {
-    font-size: 20px;
+    font-size: 18px;
     list-style-type: disc;
     margin-left: 20px;
 }
@@ -56,7 +56,7 @@ h2, h3, h4 {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    font-size: 18px;
+    font-size: 9px;
 }
 
 .recipes ul {
@@ -80,7 +80,7 @@ h2, h3, h4 {
 
 
 .cut-background {
-    background-image: url('assets/bg1.png');
+    background-image: url('assets/bulkdemo.webp');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -91,7 +91,7 @@ h2, h3, h4 {
 
 .cut-description {
     text-align: left;
-    font-size: 30px;
+    font-size: 15px;
     margin: 400px auto 0;
     padding: 20px;
     width: 100%;
@@ -141,11 +141,11 @@ h2, h3, h4 {
     text-align: center;
     margin: 0 20px;
     color: black;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .animated-text {
-    font-size: 30px;
+    font-size: 20px;
     color: grey;
     transition: color 0.5s ease;
 }
@@ -261,18 +261,18 @@ h2, h3, h4 {
     }
 
     h1, h2, h3, h4, .cut-heading, .cut-subheading {
-        font-size: 24px; /* Adjust header sizes */
+        font-size: 20px; /* Adjust header sizes */
     }
 
     .cut-description, .breakfast-content, .recipes {
-        font-size: 16px;
+        font-size: 10px;
         text-align: center;
         padding: 10px;
     }
 
     .cut-list, .recipes ul {
-        font-size: 18px;
-        padding-left: 10px;
+        font-size: 15px;
+        padding-left: 20px;
     }
 
     .breakfast-container {
@@ -414,7 +414,7 @@ h2, h3, h4 {
 }
 
 .additional-tips h4 {
-    font-size: 24px; /* Adjust heading size */
+    font-size: 18px; /* Adjust heading size */
 }
 
 .additional-tips ul {
@@ -439,4 +439,108 @@ h2, h3, h4 {
 .logo-img {
     width: 100px; /* Adjust size as needed */
     height: auto;
+}
+
+
+
+/* Hide the shopping list by default */
+.shopping-list {
+    display: none;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.shopping-category {
+    margin-bottom: 20px;
+}
+
+.shopping-category h3 {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.shopping-category ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.shopping-category li {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Button Styles */
+.shopping-list-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.shopping-list-btn:hover {
+    background-color: #45a049;
+}
+
+/* Show shopping list on hover in desktop mode */
+@media (min-width: 769px) {
+    .shopping-list-btn:hover + .shopping-list {
+        display: block;
+    }
+}
+
+/* Mobile Mode - Show on click */
+@media (max-width: 768px) {
+    .shopping-list {
+        display: none; /* Ensure it's hidden initially */
+        padding: 20px;
+    }
+}
+.scroll-box {
+    position: sticky; /* Makes it stick to the top */
+    top: 0; /* Sticks the box at the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other elements */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: transparent;
+    /* border-bottom: 2px solid #ddd; */
+    opacity: 0.8; /* Adds a subtle border for separation */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.scroll-box button {
+    flex: 1 1 100px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.scroll-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .scroll-box {
+        gap: 5px; /* Reduced spacing between buttons */
+    }
+
+    .scroll-box button {
+        flex: 1 1 calc(50% - 10px); /* Two buttons in one row */
+        padding: 10px;
+        font-size: 12px;
+    }
 }
