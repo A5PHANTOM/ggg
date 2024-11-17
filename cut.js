@@ -25,3 +25,20 @@ window.addEventListener('scroll', handleScroll);
 
 // Initial check on page load
 window.addEventListener('load', handleScroll);
+
+
+function toggleShoppingList() {
+    var shoppingList = document.getElementById('shopping-list');
+    if (shoppingList.style.display === "none" || shoppingList.style.display === "") {
+        shoppingList.style.display = "block";
+    } else {
+        shoppingList.style.display = "none";
+    }
+}
+
+function scrollToSection(sectionId) {
+    const section = document.querySelector(`.${sectionId}-container`);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
