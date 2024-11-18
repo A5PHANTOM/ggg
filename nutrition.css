@@ -26,7 +26,7 @@ h1, h2, h3, p {
 }
 
 .jumbotron {
-  background-image: url('assets/bulkdemo.webp'); /* Replace with the path to your image */
+  background-image: url('assets/logo.webp'); /* Replace with the path to your image */
     background-size: cover;  /* Ensures the image covers the full section */
     background-position: center; /* Centers the image */
     color: #fff;  /* White text color for contrast */
