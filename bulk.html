@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cutting Diet Plan</title>
+    <title>BULKING Diet Plan</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Google Font: Zen Dots -->
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="cut.css">
@@ -24,37 +26,25 @@
     <script src="cut.js" defer></script> <!-- Your JS file -->
 </head>
 <body>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="navbar-content">
+            <!-- Logo on the left -->
+            <img src="assets/newlogo.webp" alt="Logo" class="logo">
+            <!-- Navigation links -->
+            <ul>
+                <li><a href="#home">Talk To Expert</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="cut-background"> <!-- Background covering the entire area -->
         <header>    
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent;">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="nutrition.html">Nutrition</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="fitness.html">Fitness</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="logo-right">
-                        <a href="index.html">
-                            <img src="assets/BEARITT (1).svg" alt="Logo" class="logo-img">
-                        </a>
-                    </div>
-                </div>
-            </nav>
+        
+  
+
         </header>
 
         <main>
@@ -62,7 +52,7 @@
             <section class="cut-heading text-center">
                 <h1>BULKING-DIET</h1>
                 <div class="cut-description"> </div>
-                <p class="animated-text"> PREMIUM AVAILABLE </p>
+                <p class="animated-text">PREMIUM AVAILABLE</p>
             </section>
         </main>
     </div> <!-- End of cut-background -->
@@ -78,41 +68,61 @@
         <ul class="cut-list">
             <li><strong>Calorie Surplus:</strong> Aim for a 10-20% increase in your daily calorie intake compared to
                 your maintenance level</li>
-            <li><strong>Protein:</strong>  About 1.2–2 grams of protein per kilogram of body weight. This will help in
-                muscle repair and growth.
-                </li>
+            <li><strong>Protein:</strong>About 1.2–2 grams of protein per kilogram of body weight. This will help in
+                muscle repair and growth.</li>
             <li><strong>Healthy Fats:</strong> Include good fats from sources like nuts, seeds, ghee, and oils to
                 support hormone function and overall health.</li>
             <li><strong>Hydration:</strong> Drink plenty of water throughout the day (at least 3-4 liters), especially
                 around workouts.</li>
-            <li><strong>Carbohydrates</strong>: Carbs are your primary energy source, so make sure you’re eating
+            <li><strong>Carbohydrates:</strong> Carbs are your primary energy source, so make sure you’re eating
                 enough to fuel your workouts and recovery.</li>
                 <li><strong>Rest and Recovery:</strong> Sleep is crucial for muscle growth—aim for 7-9 hours of quality
                     sleep each night.</li>
                     <li><strong>Consistent Training:</strong> Follow a structured strength training program, focusing on
                         progressive overload.
                     </li>
-
-
-
         </ul>
 
-        <div class="shopping-list-items">
-            <h3 class="shopping-list">Shopping List</h3>
-            
-            <h4>Starches:</h4>
-            <p>Old-fashioned oats • Pre-rinsed quinoa • Basmati rice • Brown rice • Sweet potatoes • Russet potatoes • Whole grain pasta • Whole wheat bread • Chickpeas • Black beans</p>
-            
-            <h4>Proteins:</h4>
-            <p>Large eggs • Liquid egg whites • Greek yogurt (full-fat) • Cottage cheese (2% or full-fat) • Whole chicken • 93% lean ground turkey • Salmon fillets • Lean ground beef (85% lean) • Pork tenderloin • Canned tuna • Boneless skinless chicken thighs • Boneless skinless chicken breasts • Ground bison</p>
-            
-            <h4>Fruits and Vegetables:</h4>
-            <p>Navel oranges • Bananas • Blueberries • Broccoli • Fresh baby spinach • Chopped kale • Frozen riced cauliflower • Fresh cauliflower • Cabbage • Acorn squash • Watermelon • Cantaloupe • Avocados • Apples • Zucchini • Yellow squash • Beefsteak tomatoes • Bell peppers • Baby carrots</p>
-            
-            <h4>Other Items:</h4>
-            <p>Olive oil • Whey protein powder • Casein protein powder • Powdered stevia • Whole milk or unsweetened almond milk • Almond flour • Natural peanut butter or almond butter • Low-sodium chicken broth • Unsweetened cocoa powder • Jarred minced garlic</p>
-        </div>
-        
+       <!-- Shopping List Button -->
+<button class="shopping-list-btn" onclick="toggleShoppingList()"> <i class="fas fa-shopping-basket"></i> Shopping List</button>
+
+<!-- Shopping List Content -->
+<div id="shopping-list" class="shopping-list">
+    <div class="shopping-category" id="starches">
+        <h3>Starches:</h3>
+        <p>Old-fashioned oats • Pre-rinsed quinoa • Basmati rice • Brown rice • Sweet potatoes • Russet potatoes • Whole grain pasta • Whole wheat bread • Chickpeas • Black beans</p>
+    </div>
+
+    <div class="shopping-category" id="proteins">
+        <h3>Proteins:</h3>
+        <p>Large eggs • Liquid egg whites • Greek yogurt (full-fat) • Cottage cheese (2% or full-fat) • Whole chicken • 93% lean ground turkey • Salmon fillets • Lean ground beef (85% lean) • Pork tenderloin • Canned tuna • Boneless skinless chicken thighs • Boneless skinless chicken breasts • Ground bison</p>
+
+    </div>
+
+    <div class="shopping-category" id="fruits-vegetables">
+        <h3>Fruits and Vegetables:</h3>
+        <p>Navel oranges • Bananas • Blueberries • Broccoli • Fresh baby spinach • Chopped kale • Frozen riced cauliflower • Fresh cauliflower • Cabbage • Acorn squash • Watermelon • Cantaloupe • Avocados • Apples • Zucchini • Yellow squash • Beefsteak tomatoes • Bell peppers • Baby carrots</p>
+    </div>
+
+    <div class="shopping-category" id="other-items">
+        <h3>Other Items:</h3>
+        <p>Olive oil • Whey protein powder • Casein protein powder • Powdered stevia • Whole milk or unsweetened almond milk • Almond flour • Natural peanut butter or almond butter • Low-sodium chicken broth • Unsweetened cocoa powder • Jarred minced garlic</p>
+    </div>
+</div>
+
+
+
+<!-- Scroll Navigation Box -->
+<div class="scroll-box">
+    <button onclick="scrollToSection('breakfast')">Breakfast</button>
+    <button onclick="scrollToSection('lunch')">Lunch</button>
+    <button onclick="scrollToSection('dinner')">Dinner</button>
+    <button onclick="scrollToSection('snack')">Snack</button>
+    <button onclick="scrollToSection('before-bed')">Before Bed</button>
+</div>
+
+
+
 
         <!-- Suggested Recipes Section -->
         <h2 class="suggested-recipes" style="text-align: center;">SUGGESTED RECIPES</h2>
@@ -122,8 +132,8 @@
             
             <div class="breakfast-container">
                 <div class="breakfast1">
-                    <ul>
-                        <h4>Breakfast</h4>
+                    <h4>Breakfast</h4>
+                    <ul class="cut-list">
                         <li>Oats (50-100g) cooked with milk (200ml), topped with a banana and peanut butter (1 tbsp).</li>
                         <li>Boiled eggs (4 whole) or scrambled eggs with spinach and onions.</li>
                         <li>Chapathi (3-4 medium) made with whole wheat flour and ghee (1 tsp), served with yogurt (100g) and pomegranate or apple slices.</li>
@@ -180,7 +190,7 @@
                     </ul>
                 </div>
                 <div class="dinner2">
-                    <img src="assets/dinner.jpg" alt="Dinner Image" loading="lazy" style="width: 400px; height: auto; margin-left: 80px;">
+                    <img src="assets/dinner.webp" alt="Dinner Image" loading="lazy" style="width: 400px; height: auto; margin-left: 80px;">
                 </div>
             </div>
 
@@ -206,17 +216,18 @@
     <div class="before-bed1">
        
         <ul class="cut-list">
-            <h4>Late Night</h4>
+            <h4>Before Bed</h4>
             <li>Cottage cheese (100g) with a pinch of black pepper or chili powder.</li>
             <li>A handful of mixed nuts or pumpkin seeds.</li>
             <li>Greek yogurt (100-150g) with honey (1 tsp) or fruit (berries or apple slices).</li>
             <li>A boiled egg.</li>
             <li>Milk (1 glass) with almonds or cashews (5-6 pieces).</li>
         </ul>
+        </ul>
     </div>
     <div class="before-bed2">
         <div class="image-container">
-        <img src="assets/beforebed.jpg" alt="Before Bed Image" loading="lazy" style="width: 400px; height: auto; margin-left: 80px; ">
+        <img src="assets/beforebed.webp" alt="Before Bed Image" loading="lazy" style="width: 400px; height: auto; margin-left: 80px; ">
     </div></div>
 </div>
 <div class="additional-tips">
@@ -238,82 +249,84 @@
         </div>
     </section>
 
- <!-- Footer Wrapper for Full Width Background -->
- <div class="footer-wrapper">
-    <div class="footer">
-        <div class="footer-content">
-            <div class="footer-left">
-                <div class="footer-title">BEARITT
-                    <img src="assets/BEARITT (1).svg" alt="Logo" class="logo-img">
+    <!-- Footer Wrapper for Full Width Background -->
+    <div class="footer-wrapper">
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-title">BEARITT
+                        <img src="assets/white_logo.webp" alt="Logo" class="logo-img">
+                    </div>
+                    
+                    <p class="footer-slogan">Join us on our mission to make 50 million people fit!</p>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope mail-icon"></i>
+                        <span class="email">bearitt.fit@gmail.com</span>
+                    </div>
+                    <div class="phone-info">
+                        <i class="fas fa-phone phone-icon"></i>
+                        <span class="phone-number">+91 9846-66-55-99</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/YourPage" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/YourProfile" target="_blank">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <a href="https://twitter.com/YourProfile" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/YourProfile" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
                 </div>
-                
-                <p class="footer-slogan">Join us on our mission to make 50 million people fit!</p>
-                <div class="contact-info">
-                    <i class="fas fa-envelope mail-icon"></i>
-                    <span class="email">bearitt.fit@gmail.com</span>
+        
+                <div class="footer-center">
+                    <div class="footer-label">SERVICES</div>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">FITNESS</a></li>
+                        <li><a href="#" class="footer-link">NUTRITION</a></li>
+                    </ul>
+                    <h4 class="footer-tools">TOOLS</h4>
+                    <ul class="footer-links">
+                        <li><a href="bmr.html" class="footer-link">BMR Calculator</a></li>
+                        <li><a href="#" class="footer-link">Macro Calculator</a></li>
+                        <li><a href="#" class="footer-link">Body Fat Calculator</a></li>
+                        <li><a href="#" class="footer-link">1RM Calculator</a></li>
+                    </ul>
                 </div>
-                <div class="phone-info">
-                    <i class="fas fa-phone phone-icon"></i>
-                    <span class="phone-number">+91 9846-66-55-99</span>
+        
+                <div class="footer-company">
+                    <div class="footer-label">COMPANY</div>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">OUR STORY</a></li>
+                        <li><a href="#" class="footer-link">HELP</a></li>
+                        <li><a href="#" class="footer-link">CONTACT US</a></li>
+                    </ul>
                 </div>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/YourPage" target="_blank">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                    <a href="https://www.instagram.com/YourProfile" target="_blank">
-                        <i class="fab fa-instagram-square"></i>
-                    </a>
-                    <a href="https://twitter.com/YourProfile" target="_blank">
-                        <i class="fab fa-twitter-square"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/YourProfile" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+        
+                <div class="footer-community">
+                    <div class="footer-community-label">COMMUNITY</div>
+                    <ul class="footer-community-links">
+                        <li><a href="#" class="footer-community-link">Our Community</a></li>
+                        <li><a href="#" class="footer-community-link">Discord Channel</a></li>
+                        <li><a href="#" class="footer-community-link">Telegram Channel</a></li>
+                        <li><a href="#" class="footer-community-link">WhatsApp Group</a></li>
+                    </ul> 
                 </div>
-            </div>
-    
-            <div class="footer-center">
-                <div class="footer-label">SERVICES</div>
-                <ul class="footer-links">
-                    <li><a href="#" class="footer-link">FITNESS</a></li>
-                    <li><a href="#" class="footer-link">NUTRITION</a></li>
-                </ul>
-                <h4 class="footer-tools">TOOLS</h4>
-                <ul class="footer-links">
-                    <li><a href="bmr.html" class="footer-link">BMR Calculator</a></li>
-                    <li><a href="#" class="footer-link">Macro Calculator</a></li>
-                    <li><a href="#" class="footer-link">Body Fat Calculator</a></li>
-                    <li><a href="#" class="footer-link">1RM Calculator</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-company">
-                <div class="footer-label">COMPANY</div>
-                <ul class="footer-links">
-                    <li><a href="#" class="footer-link">ABOUT US</a></li>
-                    <li><a href="#" class="footer-link">HELP</a></li>
-                    <li><a href="#" class="footer-link">CONTACT US</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-community">
-                <div class="footer-community-label">COMMUNITY</div>
-                <ul class="footer-community-links">
-                    <li><a href="#" class="footer-community-link">Discord Channel</a></li>
-                    <li><a href="#" class="footer-community-link">Telegram Channel</a></li>
-                    <li><a href="#" class="footer-community-link">WhatsApp Group</a></li>
-                </ul>
             </div>
         </div>
-    </div>
-    
+        
 
-    </footer>
+        </footer>
 </div>
 
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="home.js"></script>
 
     <!-- JavaScript for Background Color Change on Scroll -->
     <script>
