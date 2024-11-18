@@ -7,45 +7,77 @@ body {
 }
 
 /* Style for the navigation bar */
+/* General Styles for the Navigation Bar */
 .navbar {
-    width: 100%;
     background-color: white;
-    padding: 10px 20px; /* Reduced padding for a smaller navbar */
+    padding: 10px 20px;
     border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden; /* Prevents overflow */
 }
 
+/* Flexbox Layout for Navbar Content */
 .navbar-content {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Space between logo and menu */
 }
 
-/* Style for logo */
+/* Logo Styling */
 .logo {
-    height: 50px; /* Adjust height as needed */
+    height: 50px;
     margin-right: 20px;
 }
 
-/* Navigation links */
+/* Navigation Links */
 .navbar ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-start;
+    gap: 15px; /* Space between links */
+    margin: 0;
+    padding: 0;
 }
 
 .navbar li {
-    margin-right: 20px;
+    margin: 0;
 }
 
 .navbar a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    padding: 5px;
+    padding: 5px 10px;
+    white-space: nowrap; /* Prevents link text from wrapping */
 }
 
 .navbar a:hover {
     color: #007bff;
 }
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    /* Reduce the padding and font size for mobile */
+    .navbar {
+        padding: 10px 10px;
+    }
+
+    .navbar ul {
+        display: flex; /* Keep the navigation items in a row */
+        gap: 10px; /* Reduced gap between items */
+    }
+
+    .navbar a {
+        font-size: 14px; /* Smaller font size for mobile */
+        padding: 5px 8px; /* Reduced padding */
+    }
+    
+    .logo {
+        height: 40px; /* Adjust logo size for mobile */
+    }
+}
+
 
 
 h1 {
