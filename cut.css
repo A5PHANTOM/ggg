@@ -6,6 +6,47 @@ body {
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
+/* Style for the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px; /* Reduced padding for a smaller navbar */
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for logo */
+.logo {
+    height: 50px; /* Adjust height as needed */
+    margin-right: 20px;
+}
+
+/* Navigation links */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
 
 h1 {
     color: yellow;
@@ -72,11 +113,6 @@ h2, h3, h4 {
     margin: 0 auto;
 }
 
-/* Navbar Styles */
-.navbar {
-    background-color: rgba(217, 217, 217, 0.8);
-}
-/* For the hamburger icon lines */
 
 
 .cut-background {
@@ -145,6 +181,7 @@ h2, h3, h4 {
 }
 
 .animated-text {
+    margin-top: 60px;
     font-size: 20px;
     color: grey;
     transition: color 0.5s ease;
@@ -192,6 +229,7 @@ h2, h3, h4 {
         align-items: center; /* Center the content */
         text-align: center; /* Center-align text */
         overflow: hidden;
+
     }
 
     .breakfast1, .breakfast2 {
@@ -553,5 +591,15 @@ h2, h3, h4 {
         padding: 10px;
         font-size: 12px;
         overflow: hidden;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .breakfast-container, 
+    .lunch-container, 
+    .dinner-container, 
+    .before-bed-container {
+        margin-bottom: 60px; /* Increased spacing below each section for mobile */
     }
 }
