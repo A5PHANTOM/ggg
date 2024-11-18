@@ -511,6 +511,7 @@ h2, h3, h4 {
     /* border-bottom: 2px solid #ddd; */
     opacity: 0.8; /* Adds a subtle border for separation */
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
 }
 
 .scroll-box button {
@@ -526,6 +527,7 @@ h2, h3, h4 {
     cursor: pointer;
     transition: background-color 0.3s;
     text-align: center;
+    overflow: hidden;
 }
 
 .scroll-box button:hover {
@@ -536,11 +538,13 @@ h2, h3, h4 {
 @media (max-width: 768px) {
     .scroll-box {
         gap: 5px; /* Reduced spacing between buttons */
+        overflow: hidden;
     }
 
     .scroll-box button {
         flex: 1 1 calc(50% - 10px); /* Two buttons in one row */
         padding: 10px;
         font-size: 12px;
+        overflow: hidden;
     }
 }
