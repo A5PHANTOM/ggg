@@ -399,15 +399,17 @@ h2, h3, h4 {
     .before-bed-container {
         flex-direction: column; /* Stack items vertically */
         align-items: left; /* Center the content */
-        text-align: left; /* Center-align text */
+        text-align: right/* Center-align text */
     }
 
     .before-bed1 {
         width: 100%; /* Full width for each item */
     }
      .before-bed2 {
-        width: 50%;
-        
+        width: 40%;
+        align-items:center;
+        align-self: start;
+         /* Adjust this value to move it left */
      }
 }
 
