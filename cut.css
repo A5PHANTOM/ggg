@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Zen Dots', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     min-width: 1200px;
     max-width: 100%;
     overflow-x: hidden; /* Prevents horizontal scrolling */
@@ -197,7 +197,10 @@ h2, h3, h4 {
     .breakfast1, .breakfast2 {
         width: 100%; /* Full width for each item */
         overflow: hidden;
+
     }
+    
+    
 }
 
 /* Breakfast Image Styles */
