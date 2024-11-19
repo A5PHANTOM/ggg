@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutting Diet Plan</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font: Zen Dots -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="cut.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+
+    <script src="cut.js" defer></script> <!-- Your JS file -->
+</head>
+<body>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="navbar-content">
+            <!-- Logo on the left -->
+            <img src="assets/newlogo.webp" alt="Logo" class="logo">
+            <!-- Navigation links -->
+            <ul>
+                <li><a href="#home">Talk To Expert</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="cut-background"> <!-- Background covering the entire area -->
+        <header>    
+        
+  
+
+        </header>
+
+        <main>
+            <!-- Main Content Section for Cutting Diet Plan -->
+            <section class="cut-heading text-center">
+                <h1>INTERMITTENT FASTING</h1>
+                <div class="cut-description"> </div>
+                <p class="animated-text">PREMIUM</p>
+            </section>
+        </main>
+    </div> <!-- End of cut-background -->
+
+    <!-- Key Principles Section -->
+    <section class="cut-principles">
+        <div class="text-center">
+            <p class="cutprinc-text animated-text hover-scale" >Intermittent fasting (IF) can be effectively combined with a muscle-building diet. The key
+                is to ensure you consume enough calories and macronutrients during the eating
+                window to support muscle growth and recovery</p>
+        </div>
+        <div class="flex-container">
+            <h2 class="cut-subheading">Key Principles for Muscle Building with IF:</h2>
+        </div>
+        <ul class="cut-list">
+            <ol>
+                <li><strong>Determine Your Fasting Window:</strong></li>
+                <ul>
+                    <li>Common IF protocols: 16:8 (16 hours fasting, 8 hours eating) or 18:6.</li>
+                    <li>Adjust the eating window to fit your schedule, e.g., 12 PM–8 PM or 1 PM–7 PM.</li>
+                </ul>
+                <li><strong>Prioritize Calorie and Protein Intake:</strong></li>
+                <ul>
+                    <li>Ensure you consume sufficient calories during the eating window to support muscle growth.</li>
+                    <li>Aim for 1.6–2.2g of protein per kg of body weight.</li>
+                </ul>
+                <li><strong>Meal Timing Within the Eating Window:</strong></li>
+                <ul>
+                    <li><strong>Break Fast:</strong> Start with a balanced, nutrient-dense meal to replenish energy.</li>
+                    <li><strong>Pre-Workout Meal:</strong> Include carbs and protein for energy and performance.</li>
+                    <li><strong>Post-Workout Meal:</strong> Prioritize protein and carbs to support recovery.</li>
+                </ul>
+                <li><strong>Macros for Muscle Building:</strong></li>
+                <ul>
+                    <li><strong>Protein:</strong> Chicken, eggs, fish, tofu, paneer, lentils.</li>
+                    <li><strong>Carbs:</strong> Brown rice, quinoa, sweet potatoes, oats, fruits.</li>
+                    <li><strong>Fats:</strong> Nuts, seeds, ghee, avocado, fatty fish.</li>
+                    <li><strong>Veggies:</strong> Include fiber-rich, nutrient-dense vegetables.</li>
+                </ul>
+                <li><strong>Hydration:</strong></li>
+                <ul>
+                    <li>Drink water during the fasting period to stay hydrated.</li>
+                    <li>Black coffee, green tea, and herbal teas are allowed.</li>
+                </ul>
+            </ol>
+            
+        </ul>
+
+       <!-- Shopping List Button -->
+<button class="shopping-list-btn" onclick="toggleShoppingList()"> <i class="fas fa-shopping-basket"></i> Shopping List</button>
+
+<!-- Shopping List Content -->
+<div id="shopping-list" class="shopping-list">
+    <div class="shopping-category" id="starches">
+        <h3>Starches:</h3>
+        <p>Brown rice • Quinoa • Sweet potatoes • Oats • Whole wheat bread • Whole wheat chapathi • Lentils • Chickpeas</p>
+    </div>
+
+    <div class="shopping-category" id="proteins">
+        <h3>Proteins:</h3>
+        <p>Eggs • Cottage cheese • Greek yogurt • Chicken breast • Lean ground turkey • Fish (salmon, cod, or tilapia) • Shrimp • Lentils • Paneer • Whey protein powder</p>
+    </div>
+
+    <div class="shopping-category" id="fruits-vegetables">
+        <h3>Fruits and Vegetables:</h3>
+        <p>Spinach • Kale • Broccoli • Zucchini • Bell peppers • Tomatoes • Cucumber • Avocados • Apples • Berries • Oranges • Bananas • Sweet corn • Carrots</p>
+    </div>
+
+    <div class="shopping-category" id="healthy-fats">
+        <h3>Healthy Fats:</h3>
+        <p>Almonds • Walnuts • Peanut butter (natural) • Olive oil • Coconut oil • Chia seeds • Flaxseeds</p>
+    </div>
+
+    <div class="shopping-category" id="other-items">
+        <h3>Other Items:</h3>
+        <p>Herbal teas • Black coffee • Unsweetened almond milk • Low-sodium chicken broth • Powdered peanut butter • Unsweetened cocoa powder • Spices (turmeric, cumin, coriander, black pepper)</p>
+    </div>
+</div>
+
+
+<!-- Scroll Navigation Box -->
+<div class="scroll-box">
+    <button onclick="scrollToSection('breakfast')">Breakfast</button>
+    <button onclick="scrollToSection('lunch')">Pre-Workout Meal</button>
+    <button onclick="scrollToSection('dinner')">Post-Workout Meal</button>
+    <button onclick="scrollToSection('snack')">
+        Dinner</button>
+    <button onclick="scrollToSection('before-bed')">Snack</button>
+</div>
+
+
+
+
+        <!-- Suggested Recipes Section -->
+        <h2 class="suggested-recipes" style="text-align: center;">SUGGESTED RECIPES</h2>
+        <div class="recipe-container">
+
+            <!-- Breakfast Section -->
+            
+            <div class="breakfast-container">
+                <div class="breakfast1">
+                    <h4>Breakfast( 12:00 PM – 8:00 PM)</h4>
+                    <ul class="cut-list">
+                        <li>Grilled chicken breast with a bowl of quinoa, sautéed spinach, and a side of avocado.</li>
+<li>3 boiled eggs with multigrain toast, a handful of roasted almonds, and a green smoothie.</li>
+<li>Tofu or paneer stir-fry with brown rice and cucumber salad.</li>
+
+                    </ul>
+                </div>
+                <div class="breakfast2">
+                    <img id="breakfast-slide" src="assets/breakfast2.png" alt="Breakfast Slideshow" loading="lazy" style="width: 400px; height: auto; margin-left: 80px;">
+                </div>
+            </div>
+
+
+            <!-- Lunch Section -->
+           <!-- Lunch Section -->
+<!-- Lunch Section -->
+<div class="lunch-container">
+    <!-- Left Container for Image -->
+    <div class="lunch1">
+        <img src="assets/lunch.png" alt="Lunch Image" loading="lazy" style="width: 400px; height: auto; margin-left: 80px;">
+    </div>
+
+    <!-- Right Container for Text Content -->
+    <div class="lunch2">
+        <h4> Pre-Workout Meal(2:30 PM)</h4>
+        <ul class="cut-list">
+            <li>Sweet potato chaat with a boiled egg or grilled fish.</li>
+    <li>A banana with 1 tbsp peanut butter and 1 boiled egg.</li>
+    <li>Greek yogurt with honey, granola, and mixed berries.</li>
+        </ul>
+    </div>
+</div>
+
+            <!-- Dinner Section -->
+            <div class="dinner-container">
+                <div class="dinner1">
+                   
+                    <ul class="cut-list">
+                        <h4> Post-Workout Meal(4:30 PM)</h4>
+                        <li>Protein shake with almond milk and a handful of dates or figs.</li>
+                        <li>Grilled chicken or prawns with a small portion of millet roti and sautéed broccoli.</li>
+                        <li>Omelet with mixed vegetables and a slice of whole-grain bread.</li>
+                        
+                    </ul>
+                </div>
+                <div class="dinner2">
+                    <img src="assets/dinner.webp" alt="Dinner Image" loading="lazy" style="width: 400px; height: auto; margin-left: 80px;">
+                </div>
+            </div>
+
+            <!-- Snack Section -->
+            <div class="snack-container">
+                <div class="snack1">
+                    <img src="assets/snacks.png" alt="Snacks Image" loading="lazy" style="width: 400px; height: auto; margin-left: 80px;">
+                </div>
+                <div class="snack2">
+                    <h4>Dinner(7:00 PM)</h4>
+                    <ul class="cut-list">
+                        <li>Tandoori fish or chicken tikka with stir-fried vegetables.</li>
+                        <li>Egg curry with brown rice or a millet roti and a side of curd.</li>
+                        <li>Mutton curry (lean cuts) with a small serving of quinoa and green salad.</li>
+                        
+                    </ul>
+                </div>
+            </div>
+<!-- Before Bed Section -->
+<div class="before-bed-container">
+    <div class="before-bed1">
+       
+        <ul class="cut-list">
+            <h4>Snack(Before 8 PM)(Optional)</h4>
+            <li>A handful of mixed nuts (almonds, walnuts, pistachios).</li>
+<li>A glass of turmeric milk with a pinch of cinnamon.</li>
+<li>A boiled egg or a piece of dark chocolate.</li>
+
+        </ul>
+    </div>
+    <div class="before-bed2">
+        <div class="image-container">
+        <img src="assets/beforebed.webp" alt="Before Bed Image" loading="lazy" style="width: 400px; height: auto; margin-left: 80px; ">
+    </div></div>
+</div>
+<div class="additional-tips">
+    <h2>ADDITIONAL TIPS</h2>
+    <ul>
+        <li><strong>1. Morning Workouts (During Fasting):</strong></li>
+<ul>
+    <li>If working out fasted, ensure your first meal is nutrient-dense and includes carbs, protein, and fats.</li>
+    <li>Consider BCAAs or a light pre-workout (if needed).</li>
+</ul>
+<li><strong>2. Midday/Evening Workouts:</strong></li>
+<ul>
+    <li>Consume a pre-workout meal 1–2 hours before and a high-protein post-workout meal within an hour after.</li>
+</ul>
+
+    </ul>
+</div>
+
+        </div>
+    </section>
+
+    <!-- Footer Wrapper for Full Width Background -->
+    <div class="footer-wrapper">
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-title">BEARITT
+                        <img src="assets/BEARITT (1).svg" alt="Logo" class="logo-img">
+                    </div>
+                    
+                    <p class="footer-slogan">Join us on our mission to make 50 million people fit!</p>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope mail-icon"></i>
+                        <span class="email">bearitt.fit@gmail.com</span>
+                    </div>
+                    <div class="phone-info">
+                        <i class="fas fa-phone phone-icon"></i>
+                        <span class="phone-number">+91 9846-66-55-99</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/YourPage" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/YourProfile" target="_blank">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <a href="https://twitter.com/YourProfile" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/YourProfile" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="footer-center">
+                    <div class="footer-label">SERVICES</div>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">FITNESS</a></li>
+                        <li><a href="#" class="footer-link">NUTRITION</a></li>
+                    </ul>
+                    <h4 class="footer-tools">TOOLS</h4>
+                    <ul class="footer-links">
+                        <li><a href="bmr.html" class="footer-link">BMR Calculator</a></li>
+                        <li><a href="#" class="footer-link">Macro Calculator</a></li>
+                        <li><a href="#" class="footer-link">Body Fat Calculator</a></li>
+                        <li><a href="#" class="footer-link">1RM Calculator</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-company">
+                    <div class="footer-label">COMPANY</div>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">OUR STORY</a></li>
+                        <li><a href="#" class="footer-link">HELP</a></li>
+                        <li><a href="#" class="footer-link">CONTACT US</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-community">
+                    <div class="footer-community-label">COMMUNITY</div>
+                    <ul class="footer-community-links">
+                        <li><a href="#" class="footer-community-link">Our Community</a></li>
+                        <li><a href="#" class="footer-community-link">Discord Channel</a></li>
+                        <li><a href="#" class="footer-community-link">Telegram Channel</a></li>
+                        <li><a href="#" class="footer-community-link">WhatsApp Group</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        
+
+        </footer>
+</div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="home.js"></script>
+
+    <!-- JavaScript for Background Color Change on Scroll -->
+    <script>
+
+
+
+
+  // Function to check if an element is in the viewport
+  function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Function to handle scroll event
+    function handleScroll() {
+        const animatedElements = document.querySelectorAll('.animate');
+        animatedElements.forEach(el => {
+            if (isElementInViewport(el)) {
+                el.classList.add('animate');
+            }
+        });
+    }
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Initial check
+    handleScroll();
+
+
+        
+        window.onscroll = function() {
+            var scrollTop = window.scrollY;
+            var backgroundWrapper = document.getElementById("background-wrapper");
+
+            // Change background color based on scroll position
+            if (scrollTop > 800) { // You can adjust this value
+                backgroundWrapper.style.backgroundColor = "black"; // Change to the desired color when scrolled
+            } else {
+                backgroundWrapper.style.backgroundColor = "#D9D9D9"; // Original color
+            }
+        };
+    </script>
+</body>
+</html> 
