@@ -1,160 +1,243 @@
-
-
-body {
+/* Reset some default styles */
+* {
     margin: 0;
-    background-color: #ece9e8;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the navigation bar */
+.navbar {
+    background-color: white;
+    padding: 10px 20px; /* Reduced padding for a smaller navbar */
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-content {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Navbar styles */
-.navbar-nav .nav-link {
-    font-family: 'Zen Dots', sans-serif; /* Set Zen Dots font */
-    color: black; /* Color for navbar items */
+/* Style for logo */
+.logo {
+    height: 50px; /* Adjust height as needed */
+    margin-right: 20px;
 }
-.navbar .navbar-logo {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
+
+/* Navigation links */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+/* Yellow background div under the navbar */
+.yellow-div {
+    background-color: black;
+    height: 30px; /* Height of the yellow div */
+    width: 100%;
+}
+
+/* Style for the slogan text */
+.slogan {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    padding: 7.5px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white; /* Dark color for better visibility */
+    text-align: center;
+}
+
+/* Yellow div slogan */
+.bg-warning {
+    height: 20px;
+}
+
+/* Video styling */
+.embed-responsive-item {
+    height: 400px; /* Adjust based on desired video height */
+}
+
+/* Style for video section */
+.video-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.video-section video {
+    width: 100%;
+    height: 500px; /* Increased height */
+    object-fit: cover;
+}
+
+/* Green div below the video */
+.green-div {
+    background-color: rgb(131, 131, 131);
+    height: 500px;
+}
+
+/* Style for main content */
+.main-content {
+    padding: 20px;
+}
+
+.main-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Swiper container */
+.swiper-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Ensure no overflow outside the visible area */
+    padding: 0 10px; /* Padding for better alignment */
+}
+
+/* Swiper Slide */
+.swiper-slide {
+    flex-shrink: 0;
+    width: calc(25% - 10px); /* 4 cards per row with 10px spacing */
+    margin-right: 10px;
+    margin-left: 5px; /* Shift slides slightly to the right */
+}
+
+/* Cards are shown 4 at a time */
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+/* Card Container Styling */
+.card-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Full width of swiper container */
+    height: 35rem; /* Default card height */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 0px; /* Space between cards */
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the card area */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-container:hover .card-image {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Overlay Styling */
+.card-overlay {
     position: absolute;
-    right: 20px; /* Distance from the right edge */
-    top: 10px; /* Distance from the top edge */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem; /* Overlay height */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.card-title {
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
-.header {
+/* Custom Navigation Container */
+.custom-navigation {
+    position: absolute;
+    top: 50%; /* Center vertically relative to the card area */
+    width: 100%; /* Full width for alignment */
+    z-index: 10;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    position: relative;
-    z-index: 1;
+    transform: translateY(-50%); /* Center buttons vertically */
+    pointer-events: none; /* Prevent blocking interactions with cards */
 }
 
-.menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.logo {
-    width: 50px;
-    height: auto;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    z-index: 1;
-}
-
-.video-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-}
-
-.intro-video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.content-area {
-    padding: 20px;
-    text-align: center;
+/* Custom Swiper Buttons */
+.custom-swiper-button {
+    font-size: 2rem;
     color: black;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-    .video-section {
-        height: 50vh; /* Video takes half of the screen height */
-    }
-
-  
-    .content-area {
-        position: relative;
-        top: 100%; /* Moves content below the video */
-        transform: none; /* Reset transformation for proper layout */
-        background-color: white;
-        padding: 40px 20px;
-        width: 100%; /* Full width on mobile */
-        text-align: left; /* Align text to the left */
-        margin: 0; /* Remove any default margin */
-        left: 0%;
-    }
-}
-
-
-footer {
-    text-align: center;
-    color: #333;
-    margin-top: 20px;
-}
-
-/* Drawer Styles */
-.drawer {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0px;
-    background-color: black;
-    color: #ece9e8;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.drawer a {
-    padding: 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.drawer a:hover {
-    color: #f44336;
-}
-
-.close-btn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.cta-button {
-    padding: 10px 20px;
-    background-color: orange;
-    color: white;
-    border: none;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    pointer-events: all; /* Ensure buttons remain clickable */
 }
 
-.cta-button:hover {
-    background-color: #ff9900;
+/* Hover Effect */
+.custom-swiper-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.custom-swiper-button i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
-    .intro-video {
-        height: auto; /* Ensure it scales correctly */
+    /* Adjust swiper slide for mobile to show two cards at a time */
+    .swiper-slide {
+        width: calc(50% - 10px); /* 2 cards per row with 10px spacing */
+        margin-right: 5px;
+        margin-left: 5px; /* Adjust spacing between cards */
     }
 
-    .content-area {
-        top: 60%; /* Adjust content position on mobile */
-        font-size: 1.2em; /* Increase text size slightly */
+      /* Adjust card container size for mobile */
+      .card-container {
+        width: 100%; /* Full width for mobile */
+        height: 20rem; /* Reduced height for mobile */
+        margin: 0 5px; /* Space between cards */
     }
 
-    .video-section {
-        height: auto;
+    /* Adjust card image size for mobile */
+    .card-image {
+        height: 75%; /* Make the image fill 75% of the card height */
+    }
+
+    /* Adjust navigation button size for mobile */
+    .custom-swiper-button {
+        font-size: 1.5rem; /* Smaller size for buttons */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .custom-navigation {
+        top: 50%; /* Center buttons vertically */
     }
 }
-
