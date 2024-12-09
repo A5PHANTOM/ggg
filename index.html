@@ -3,184 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Website</title>
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="homestyles.css"> <!-- Custom styles -->
-    <link rel="stylesheet" href="loading.css"> <!-- Custom styles -->
-    <link rel="stylesheet" href="fitness.css"> <!-- Include fitness.css for styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet"> <!-- Import Zen Dots font -->
-    <link rel="stylesheet" href="footer.css"> <!-- Custom styles -->
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
 
-    <style>
-        /* Additional styles can be added here if needed */
-        .navbar-nav .nav-link {
-            font-family: 'Zen Dots', sans-serif; /* Set Zen Dots font */
-            color: #333;
-        }
-
-        .navbar {
-            width: 100%; /* Make the navbar full width */
-        }
-    </style>
-</head> 
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="home.css">
+</head>
 <body>
-    <div class="loading-screen" id="loading-screen">
-       
-        <img src="assets/logo1.webp" alt="FitLife Logo" class="loading-logo"> <!-- Logo centered on loading screen --> 
-       
-     
-    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <!-- Logo on the left -->
+            <img src="assets/newlogo.webp" alt="Logo" class="logo">
+            <!-- Navigation links -->
+            <ul>
+                <li><a href="#home">Talk To Expert</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D9D9D9;">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nutrition.html">NUTRITION</a> <!-- Redirects to the nutrition page -->
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Classes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Fitness.html">FITNESS</a> <!-- Redirects to the fitness page -->
-                        </li>
-                    </ul>
+
+  <!-- Yellow background div under the navbar -->
+  <div class="yellow-div">
+    <h2 class="slogan">Sometimes,you just got to BEARITT!</h2>
+  </div>
+
+
+  <div class="video-section">
+    <video autoplay loop muted>
+        <source src="assets/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+
+ <!-- Swiper Slider Section -->
+ <div class="swiper-container my-swiper">
+    <div class="swiper-wrapper">
+        <!-- Card 1 -->
+        <div class="swiper-slide">
+            <div class="card-container">
+                <img src="assets/bg1.jpg" alt="Card 1" class="card-image">
+                <div class="card-overlay">
+                    <h5 class="card-title">Gladiator 5.0</h5>
                 </div>
             </div>
-        </nav>
-    </header>
-
-    <div class="video-section">
-        <video class="intro-video" autoplay loop muted playsinline>
-            <source src="assets/intro.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <div class="drawer" id="drawer">
-        <a href="javascript:void(0)" class="close-btn" onclick="toggleDrawer()">&times;</a>
-        <a href="#">Home</a>
-        <a href="nutrition.html">NUTRITION</a> <!-- Redirects to the nutrition page -->
-        <a href="#">Classes</a>
-        <a href="#">Contact</a>
-        <a href="Fitness.html">FITNESS</a> <!-- Redirects to the fitness page -->
-    </div>
-
-    <div class="content-area hidden" id="content-area">
-        <h1>Join the Fitness Revolution</h1>
-        <p>Access all our gyms and online classes for one low price!</p>
-        <a href="login.html"><button class="cta-button">Join Now</button></a>
-    </div>
-
-    <!-- Footer Wrapper for Full Width Background -->
- <div class="footer-wrapper">
-    <div class="footer">
-        <div class="footer-content">
-            <div class="footer-left">
-                <div class="footer-title">BEARITT
-                    <!-- <img src="assets/BEARITT (1).svg" alt="Logo" class="logo-img"> -->
-                </div>
-                
-                <p class="footer-slogan">Join us on our mission to make 50 million people fit!</p>
-                <div class="contact-info">
-                    <i class="fas fa-envelope mail-icon"></i>
-                    <span class="email">Intentiocustoms@gmail.com</span>
-                </div>
-                <div class="phone-info">
-                    <i class="fas fa-phone phone-icon"></i>
-                    <span class="phone-number">+91 9846-66-55-99</span>
-                </div>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/YourPage" target="_blank">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                    <a href="https://www.instagram.com/YourProfile" target="_blank">
-                        <i class="fab fa-instagram-square"></i>
-                    </a>
-                    <a href="https://twitter.com/YourProfile" target="_blank">
-                        <i class="fab fa-twitter-square"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/YourProfile" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="swiper-slide">
+            <div class="card-container">
+                <img src="assets/image2.jpg" alt="Card 2" class="card-image">
+                <div class="card-overlay">
+                    <h5 class="card-title">Santa Muerte</h5>
                 </div>
             </div>
-    
-            <div class="footer-center">
-                <div class="footer-label">SERVICES</div>
-                <ul class="footer-links">
-                    <li><a href="#" class="footer-link">FITNESS</a></li>
-                    <li><a href="#" class="footer-link">NUTRITION</a></li>
-                </ul>
-                <h4 class="footer-tools">TOOLS</h4>
-                <ul class="footer-links">
-                    <li><a href="#" class="footer-link">BMR Calculator</a></li>
-                    <li><a href="#" class="footer-link">Macro Calculator</a></li>
-                    <li><a href="#" class="footer-link">Body Fat Calculator</a></li>
-                    <li><a href="#" class="footer-link">1RM Calculator</a></li>
-                </ul>
+        </div>
+        <!-- Card 3 -->
+        <div class="swiper-slide">
+            <div class="card-container">
+                <img src="assets/image3.jpg" alt="Card 3" class="card-image">
+                <div class="card-overlay">
+                    <h5 class="card-title">UFC Fusion</h5>
+                </div>
             </div>
-    
-            <div class="footer-company">
-                <div class="footer-label">COMPANY</div>
-                <ul class="footer-links">
-                    <li><a href="#" class="footer-link">ABOUT US</a></li>
-                    <li><a href="#" class="footer-link">HELP</a></li>
-                    <li><a href="#" class="footer-link">CONTACT US</a></li>
-                </ul>
+        </div>
+        <!-- Card 4 -->
+        <div class="swiper-slide">
+            <div class="card-container">
+                <img src="assets/image4.jpg" alt="Card 4" class="card-image">
+                <div class="card-overlay">
+                    <h5 class="card-title">Silent Power</h5>
+                </div>
             </div>
-    
-            <div class="footer-community">
-                <div class="footer-community-label">COMMUNITY</div>
-                <ul class="footer-community-links">
-                    <li><a href="#" class="footer-community-link">Discord Channel</a></li>
-                    <li><a href="#" class="footer-community-link">Telegram Channel</a></li>
-                    <li><a href="#" class="footer-community-link">WhatsApp Group</a></li>
-                </ul>
+        </div>
+        <!-- Add more cards (Card 5 to Card 8) -->
+        <div class="swiper-slide">
+            <div class="card-container">
+                <img src="assets/image5.jpg" alt="Card 5" class="card-image">
+                <div class="card-overlay">
+                    <h5 class="card-title">Warrior's Might</h5>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card-container">
+                <img src="assets/image6.jpg" alt="Card 6" class="card-image">
+                <div class="card-overlay">
+                    <h5 class="card-title">Titan Force</h5>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card-container">
+                <img src="assets/image7.jpg" alt="Card 7" class="card-image">
+                <div class="card-overlay">
+                    <h5 class="card-title">Dragon's Fury</h5>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card-container">
+                <img src="assets/image8.jpg" alt="Card 8" class="card-image">
+                <div class="card-overlay">
+                    <h5 class="card-title">Phoenix Rise</h5>
+                </div>
             </div>
         </div>
     </div>
-    
+      <!-- Custom Navigation Buttons (Now Below the Cards) -->
+      <div class="custom-navigation">
+        <div class="custom-swiper-button swiper-button-prev">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="custom-swiper-button swiper-button-next">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+</div>
 
-    </footer>
+    <!-- Main Content -->
+    <section class="main-content">
+        <h1>Welcome to Our Website</h1>
+        <p>This is the home page of our site.</p>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        function toggleDrawer() {
-            var drawer = document.getElementById("drawer");
-            if (drawer.style.width === "250px") {
-                drawer.style.width = "0";
-            } else {
-                drawer.style.width = "250px";
-            }
-        }
-
-        // Show loading screen for 3 seconds
-        setTimeout(function() {
-            document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
-            document.getElementById("content-area").classList.remove("hidden"); // Show content area
-        }, 3000); // 3000 milliseconds = 3 seconds
-
-
-        
-    
- 
-
-    </script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>
