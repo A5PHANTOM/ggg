@@ -1,0 +1,342 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f5f5f5;
+}
+
+header {
+    background: linear-gradient(90deg, #3e261e, #141211);
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+.about-section {
+    position: relative;
+    background-image: url('background.jpg'); /* Ensure this is the correct image file name */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust height as needed */
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    max-width: 400px;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    margin: 0 0 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+}
+
+.about-us {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fa0a0a;
+}
+
+.about-us p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #555;
+}
+
+
+
+section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #fa0a0a ;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(20% - 10px);
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    max-width: 120px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* New CSS for "Who We Are and What Drives Us" section */
+.who-we-are {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+.text-container h2 {
+    color: #fa0a0a;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #555;
+}
+
+.text-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.text-container button:hover {
+    background: #f9f7f7;
+}
+
+.image-container {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+/* Style for the section */
+.featured-section h2 {
+    color:  #fa0a0a;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container for the image */
+.featured-image-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden; /* Ensures that the overlay is contained within the image */
+}
+
+/* Style for the image */
+.featured-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Optional: Smooth transition for scaling */
+}
+
+/* Overlay for the text */
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: -1.5%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and movement */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100%); /* Initially out of view */
+}
+
+/* Make the overlay visible when hovering */
+.featured-image-container:hover .image-overlay {
+    opacity: 1; /* Make the overlay fully visible */
+    transform: translateY(0); /* Slide the overlay up into view */
+}
+
+/* Style for the paragraph inside the overlay */
+.image-overlay p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.featured-section button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: #ff7f50;  /* The same color as the 'Get the BEARITT App' button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.featured-section button:hover {
+    background: #e67e22; /* Darker shade for hover effect */
+}
+
+
+footer {
+    background-color: #111;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 23%; /* Adjust the width of each column */
+    margin-bottom: 30px;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+}
+
+ul li a:hover {
+    color: #f39c12;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* For responsiveness, adjust the columns on smaller screens */
+@media (max-width: 768px) {
+    .footer-column {
+        width: 48%; /* Make each column take 48% on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-column {
+        width: 100%; /* Stack columns on very small screens */
+    }
+}
