@@ -1,0 +1,145 @@
+/* footer.css */
+
+
+@import url('https://fonts.googleapis.com/css2?family=YourFont&display=swap');
+.footer-content {
+    font-family: 'Zen Dots', sans-serif !important; /* Use !important if needed */
+}
+
+
+.footer {
+    width: 100%;
+    background-color: black; /* Keep the background color black */
+    height: 400px; /* Set height of the footer */
+    padding: 20px; /* Add padding for better spacing */
+    display: flex; /* Enable flexbox */
+    align-items: flex-start; /* Align items to the top */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out sections evenly */
+    width: 100%; /* Use full width */
+}
+
+.footer-left,
+.footer-center,
+.footer-company,
+.footer-community {
+    display: flex; /* Ensure items can be aligned */
+    flex-direction: column; /* Stack items vertically */
+    color: white; /* Set text color to white */
+    margin-right: 30px; /* Space between sections */
+}
+
+
+.footer-label,
+.footer-community-label {
+    font-size: large; /* Set a uniform font size for all labels */
+    margin-bottom: 20px; /* 20px gap below each label */
+    color: white; /* Set label color to white */
+    text-align: left; /* Align text to the left */
+}
+
+.footer-links,
+.footer-community-links {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Reset margin */
+    text-align: left; /* Align links to the left */
+}
+
+.footer-links li,
+.footer-community-links li {
+    margin: 5px 0; /* Space between links */
+}
+
+.footer-links .footer-link,
+.footer-community .footer-community-link {
+    color: white; /* Set link color to yellow */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-links .footer-link:hover,
+.footer-community .footer-community-link:hover {
+    color: white; /* Keep the color yellow on hover */
+    text-decoration: none; /* Ensure underline remains removed */
+}
+
+/* Additional styles for better alignment */
+.footer-left, .footer-center, .footer-company, .footer-community {
+    align-items: flex-start; /* Align items to the left */
+}
+
+.footer-tools{
+    font-size: large; /* Set a uniform font size for tools label */
+    margin-top: 50px; /* Increase gap before the TOOLS section */
+    color: white; /* Set label color to white */
+    text-align: left; /* Align text to the left */
+}
+
+
+.footer-title {
+    font-size: 2.5em; /* Adjust the size as needed */
+    color: white; /* Keep the color as yellow */
+    margin-bottom: 10px; /* Add some space below the title if needed */
+}
+
+.social-icons {
+    display: flex; /* Use flexbox for social icons */
+    gap: 10px; /* Space between icons */
+    margin-top: 10px; /* Space above social icons */
+}
+
+.social-icons a {
+    color: white; /* Color for social icons */
+    font-size: 1.5em; /* Size of social icons */
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        height: auto; /* Allow height to adjust based on content */
+        text-align: center; /* Center text in the footer */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        width: 100%; /* Ensure full width */
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-company,
+    .footer-community {
+        margin-right: 0; /* Remove right margin for mobile view */
+        margin-bottom: 20px; /* Add space between stacked items */
+        width: 100%; /* Ensure full width for each section */
+        text-align: center; /* Center text in each section */
+    }
+
+    /* Adjust icon sizes if needed */
+    .social-icons a {
+        font-size: 2em; /* Increase icon size for better visibility */
+    }
+}
+
+
+.logo-img {
+    width: 40px; /* Adjust width to make it smaller */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Style for footer logo */
+.footer-logo {
+    margin-bottom: 10px; /* Add spacing below the logo */
+}
+
+.footer-logo-img {
+    max-width: 150px; /* Set a reasonable size for the logo */
+    height: auto;
+    display: block;
+}

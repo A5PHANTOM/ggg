@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULKING Diet Plan</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font: Zen Dots -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="cut.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+
+    <script src="cut.js" defer></script> <!-- Your JS file -->
+</head>
+<body>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="navbar-content">
+            <!-- Logo on the left -->
+            
+            <img src="assets/newlogo.webp" alt="Logo" class="logo">
+            
+            <!-- Navigation links -->
+            <ul>
+                <li><a href="#home">Talk To Expert</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="cut-background"> <!-- Background covering the entire area -->
+        <header>    
+        
+  
+
+        </header>
+
+        <main>
+            <!-- Main Content Section for Cutting Diet Plan -->
+            <section class="cut-heading text-center">
+                <h1>Mid -snacks </h1>
+                <div class="cut-description"> </div>
+                <p class="animated-text">PREMIUM AVAILABLE</p>
+            </section>
+        </main>
+    </div> <!-- End of cut-background -->
+
+    <!-- Key Principles Section -->
+    <section class="cut-principles">
+        <div class="text-center">
+            <p class="cutprinc-text animated-text hover-scale">
+                Healthy snacks are perfect for fueling your fitness journey, providing sustained energy and essential nutrients. Choose options like nuts, Greek yogurt, boiled eggs, or whole-grain crackers with hummus. They’re easy to prepare, portable, and help curb hunger between meals!
+            </p>
+            
+        </div>  
+        <!-- <div class="flex-container">
+            <h2 class="cut-subheading">Key Principles of a Bulking Diet:</h2>
+        </div>
+        <ul class="cut-list">
+            <li><strong>Calorie Surplus:</strong> Aim for a 10-20% increase in your daily calorie intake compared to
+                your maintenance level</li>
+            <li><strong>Protein:</strong>About 1.2–2 grams of protein per kilogram of body weight. This will help in
+                muscle repair and growth.</li>
+            <li><strong>Healthy Fats:</strong> Include good fats from sources like nuts, seeds, ghee, and oils to
+                support hormone function and overall health.</li>
+            <li><strong>Hydration:</strong> Drink plenty of water throughout the day (at least 3-4 liters), especially
+                around workouts.</li>
+            <li><strong>Carbohydrates:</strong> Carbs are your primary energy source, so make sure you’re eating
+                enough to fuel your workouts and recovery.</li>
+                <li><strong>Rest and Recovery:</strong> Sleep is crucial for muscle growth—aim for 7-9 hours of quality
+                    sleep each night.</li>
+                    <li><strong>Consistent Training:</strong> Follow a structured strength training program, focusing on
+                        progressive overload.
+                    </li>
+        </ul> -->
+
+       <!-- Shopping List Button -->
+<button class="shopping-list-btn" onclick="toggleShoppingList()"> <i class="fas fa-shopping-basket"></i> Shopping List</button>
+
+<!-- Shopping List Content -->
+<div id="snacks-shopping-list" class="shopping-list">
+    <div class="shopping-category" id="snack-proteins">
+        <h3>Proteins:</h3>
+        <p>Hard-boiled eggs • Greek yogurt (plain or flavored) • Cottage cheese (low-fat) • Turkey or chicken slices</p>
+    </div>
+
+    <div class="shopping-category" id="snack-nuts-seeds">
+        <h3>Seeds and Nuts:</h3>
+        <p>Raw almonds • Walnuts • Cashews • Sunflower seeds • Trail mix (unsweetened) • Nut butter (peanut, almond, or cashew)</p>
+    </div>
+
+    <div class="shopping-category" id="snack-fruits">
+        <h3>Fruits:</h3>
+        <p>Apples • Bananas • Oranges • Grapes • Dried fruits (unsweetened, like raisins or apricots) • Mixed berries</p>
+    </div>
+
+    <div class="shopping-category" id="snack-grains">
+        <h3>Grains:</h3>
+        <p>Whole-grain crackers • Brown rice cakes • Popcorn (air-popped) • Whole-grain bread</p>
+    </div>
+
+    <div class="shopping-category" id="snack-veggies">
+        <h3>Vegetables:</h3>
+        <p>Carrot sticks • Celery sticks • Cucumber slices • Cherry tomatoes • Bell pepper strips</p>
+    </div>
+
+    <div class="shopping-category" id="snack-other-items">
+        <h3>Other Items:</h3>
+        <p>Hummus • Guacamole • Dark chocolate (70% cacao or higher) • Cheese sticks • Yogurt-covered nuts (unsweetened)</p>
+    </div>
+</div>
+
+
+
+
+
+<!-- Scroll Navigation Box -->
+<div class="scroll-box">
+    <button onclick="scrollToSection('breakfast')">Breakfast</button>
+    <button onclick="scrollToSection('lunch')">Lunch</button>
+    <button onclick="scrollToSection('dinner')">Dinner</button>
+    <button onclick="scrollToSection('snack')">Snack</button>
+    <button onclick="scrollToSection('before-bed')">Before Bed</button>
+</div>
+
+
+
+
+        <!-- Suggested Recipes Section -->
+        <h2 class="suggested-recipes" style="text-align: center;">SUGGESTED RECIPES</h2>
+        <div class="recipe-container">
+
+            <!-- Breakfast Section -->
+            
+            <div class="breakfast-container">
+                <div class="breakfast1">
+                    <h4>Option 1:</h4>
+                    <ul class="cut-list">
+                        <!-- <li>Ingredients:</li> -->
+                        <ul>
+                            <!-- <li>1 large banana (frozen for creaminess)</li>
+                            <li>2 tablespoons natural peanut butter (or almond butter)</li>
+                            <li>1 scoop plant-based protein powder (vanilla or unflavored)</li>
+                            <li>1 cup unsweetened almond milk (or any plant-based milk)</li>
+                            <li>1 teaspoon chia seeds</li> -->
+                            <li>Greek yogurt (200g) with mixed nuts (almonds, walnuts) and a handful of raisins or
+                                dates.
+                                </li>
+                        <!-- </ul>
+                        <li>Instructions: Blend all ingredients until smooth. Add ice if you prefer a thicker texture.</li>
+                        <li>Protein Boost: ~20–25g (depending on protein powder)</li> -->
+                    </ul>
+                    
+                </div>
+                <div class="breakfast2">
+                    <img id="breakfast-slide" src="assets/smoothi/cup-brazilian-dessert-with-kiwi.webp" alt="Breakfast Slideshow" loading="lazy" style="width: 400px; height: auto; margin-left: 80px;">
+                </div>
+            </div>
+
+
+            <!-- Lunch Section -->
+           <!-- Lunch Section -->
+<!-- Lunch Section -->
+<div class="lunch-container">
+    <!-- Left Container for Image -->
+    <div class="lunch1">
+        <img src="assets/smoothi/glass-blueberry-smoothie.webp" alt="Lunch Image" loading="lazy" style="width: 400px; height: auto; margin-left: 80px;">
+    </div>
+
+    <!-- Right Container for Text Content -->
+    <div class="lunch2">
+        <h4>Option 2:
+        </h4>
+        <ul class="cut-list">
+            <li>Chana chaat (boiled chickpeas, tomatoes, onions, cucumber, lemon, and spices)</li>
+            <li</li>
+            
+            <li>A small piece of fruit (mango, papaya, or apple).
+            </li>
+            <!-- <li>1 cup unsweetened oat milk</li>
+            <li>1 teaspoon flaxseeds</li>
+            <li>Optional: A pinch of cinnamon for flavor</li>
+        </ul>
+        <li>Instructions: Blend all ingredients. Top with cacao nibs or a sprinkle of cinnamon if desired.</li>
+        <li>Protein Boost: ~25g</li>
+    </ul> -->
+        </ul>
+    </div>
+</div>
+
+            <!-- Dinner Section -->
+            <div class="dinner-container">
+                <div class="dinner1">
+                   
+                    <ul class="cut-list">
+                        <h4>Option 3:</h4>
+        <ul>
+            <li>Protein smoothie with whey protein (1 scoop), banana, oats (30g), and almond
+                milk or regular milk.
+                </li>
+            <!-- <li>1/2 cup plain coconut yogurt</li>
+            <li>1 scoop vanilla plant-based protein powder</li>
+            <li>1 tablespoon chia seeds</li>
+            <li>1 cup unsweetened almond milk</li>
+            <li>Optional: 1 teaspoon maple syrup for sweetness</li>
+        </ul>
+        <li>Instructions: Blend until creamy and smooth. Garnish with a few fresh berries.</li>
+        <li>Protein Boost: ~20g</li> -->
+    </ul>
+                </div>
+                <div class="dinner2">
+                    <img src="assets/smoothi/healthy-kiwi-smoothie-summer-recipe.webp" alt="Dinner Image" loading="lazy" style="width: 400px; height: auto; margin-left: 80px;">
+                </div>
+            </div>
+
+            <!-- Snack Section -->
+            <div class="snack-container">
+                <div class="snack1">
+                    <img src="assets/smoothi/view-delicious-banana-milkshake-with-fruits.webp" alt="Snacks Image" loading="lazy" style="width: 400px; height: auto; margin-left: 80px;">
+                </div>
+                <div class="snack2">
+                    <h4>Option 4:</h4>
+                    <ul class="cut-list">
+                        <ul>
+                            <li>Boiled eggs (2-3 egg whites) with a sprinkle of salt and pepper.</li>
+                            <li>Paneer tikka (grilled, without oil) with a cucumber salad.</li>
+                            <!-- <li>1 scoop protein powder</li>
+                            <li>1 cup almond milk</li>
+                            <li>1 tablespoon peanut butter</li>
+                            <li>1 cup milk (high protein content)</li>
+                            <li>Optional: Dash of nutmeg or cinnamon</li>
+                        </ul>
+                        <li>Instructions: Blend all ingredients into a creamy smoothie. Adjust milk for consistency.</li>
+                        <li>Protein Boost: ~25g</li> -->
+                    </ul>
+                </div>
+            </div>
+<!-- Before Bed Section -->
+<div class="before-bed-container">
+    <div class="before-bed1">
+       
+        <ul class="cut-list">
+            <h4>Option 5:
+            </h4>
+            <ul>
+                <li>• Sweet potato (100 g)</li>
+                <li> 2 bread with peanut butter and 1 banana</li>
+                <!-- <li>1/2 tsp cinnamon</li>
+                <li>1 tbsp ground flaxseeds</li>
+                <li>1 cup almond or normal milk</li>
+                <li>Ice (optional)</li>
+            </ul>
+            <li>Directions: Blend all ingredients together until smooth. Apples provide fiber and natural sweetness, while cinnamon helps regulate blood sugar levels.</li> -->
+        </ul>
+    </div>
+    <div class="before-bed2">
+        <div class="image-container">
+        <img src="assets/smoothi/freshness-glass-pineapple-raspberry-strawberry-citrus-mint-generated-by-artificial-intelligence.webp" alt="Before Bed Image" loading="lazy" style="width: 400px; height: auto; margin-left: 80px; ">
+    </div></div>
+</div>
+<div class="additional-tips">
+    <!-- <h2>ADDITIONAL TIPS FOR SMOOTHIES</h2>
+    <ul>
+        <li><strong>Protein-Packed Smoothies:</strong> Use whey or plant-based protein powder, Greek yogurt, or nut butters to support muscle growth.</li>
+        <li><strong>Perfect Timing:</strong> Drink a protein smoothie during your eating window or post-workout for optimal recovery.</li>
+        <li><strong>Boost Nutrients:</strong> Add chia seeds, flaxseeds, leafy greens, and frozen fruits for extra vitamins, fiber, and antioxidants.</li>
+        <li><strong>Healthy Fats:</strong> Include avocado, coconut oil, or nut butters for energy and healthy fats.</li>
+        <li><strong>Hydration:</strong> Use water or unsweetened almond milk as your base liquid for hydration without excess calories.</li>
+        <li><strong>Enhance with Supplements:</strong> Add creatine, BCAAs, or collagen for muscle recovery and joint health.</li>
+        <li><strong>Sweetness:</strong> Use natural sweeteners like dates or stevia to add flavor without the sugar spike.</li>
+    </ul> -->
+    
+</div>
+
+        </div>
+    </section>
+
+    <!-- Footer Wrapper for Full Width Background -->
+    <div class="footer-wrapper">
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-title">BEARITT
+                        <img src="assets/white_logo.webp" alt="Logo" class="logo-img">
+                    </div>
+                    
+                    <p class="footer-slogan">Join us on our mission to make 50 million people fit!</p>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope mail-icon"></i>
+                        <span class="email">bearitt.fit@gmail.com</span>
+                    </div>
+                    <div class="phone-info">
+                        <i class="fas fa-phone phone-icon"></i>
+                        <span class="phone-number">+91 9846-66-55-99</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/YourPage" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/YourProfile" target="_blank">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <a href="https://twitter.com/YourProfile" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/YourProfile" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="footer-center">
+                    <div class="footer-label">SERVICES</div>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">FITNESS</a></li>
+                        <li><a href="#" class="footer-link">NUTRITION</a></li>
+                    </ul>
+                    <h4 class="footer-tools">TOOLS</h4>
+                    <ul class="footer-links">
+                        <li><a href="bmr.html" class="footer-link">BMR Calculator</a></li>
+                        <li><a href="#" class="footer-link">Macro Calculator</a></li>
+                        <li><a href="#" class="footer-link">Body Fat Calculator</a></li>
+                        <li><a href="#" class="footer-link">1RM Calculator</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-company">
+                    <div class="footer-label">COMPANY</div>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">OUR STORY</a></li>
+                        <li><a href="#" class="footer-link">HELP</a></li>
+                        <li><a href="#" class="footer-link">CONTACT US</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-community">
+                    <div class="footer-community-label">COMMUNITY</div>
+                    <ul class="footer-community-links">
+                        <li><a href="#" class="footer-community-link">Our Community</a></li>
+                        <li><a href="#" class="footer-community-link">Discord Channel</a></li>
+                        <li><a href="#" class="footer-community-link">Telegram Channel</a></li>
+                        <li><a href="#" class="footer-community-link">WhatsApp Group</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        
+
+        </footer>
+</div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="home.js"></script>
+
+    <!-- JavaScript for Background Color Change on Scroll -->
+    <script>
+
+
+
+
+  // Function to check if an element is in the viewport
+  function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Function to handle scroll event
+    function handleScroll() {
+        const animatedElements = document.querySelectorAll('.animate');
+        animatedElements.forEach(el => {
+            if (isElementInViewport(el)) {
+                el.classList.add('animate');
+            }
+        });
+    }
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Initial check
+    handleScroll();
+
+
+        
+        window.onscroll = function() {
+            var scrollTop = window.scrollY;
+            var backgroundWrapper = document.getElementById("background-wrapper");
+
+            // Change background color based on scroll position
+            if (scrollTop > 800) { // You can adjust this value
+                backgroundWrapper.style.backgroundColor = "black"; // Change to the desired color when scrolled
+            } else {
+                backgroundWrapper.style.backgroundColor = "#D9D9D9"; // Original color
+            }
+        };
+    </script>
+</body>
+</html> 
