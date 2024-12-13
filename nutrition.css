@@ -1,20 +1,20 @@
 /* Apply Zen Dot to body text */
 body {
-  font-family: 'Zen Dots', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 /* Apply Zen Dot to other specific elements (e.g., headers) */
 h1, h2, h3, p {
-  font-family: 'Zen Dots', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 /* Ensure buttons and links also use Zen Dot font */
 .nav-link, .card-title, .btn {
-  font-family: 'Zen Dots', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .hero {
-  background-image: url('images/nutrition-hero.jpg');
+  background-image: url('assets/bulkdemo\ 1\ \(2\).webp');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -26,7 +26,7 @@ h1, h2, h3, p {
 }
 
 .jumbotron {
-  background-image: url('assets/logo.webp'); /* Replace with the path to your image */
+  background-image: url('assets/Group\ 7.webp'); /* Replace with the path to your image */
     background-size: cover;  /* Ensures the image covers the full section */
     background-position: center; /* Centers the image */
     color: #fff;  /* White text color for contrast */
