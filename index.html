@@ -16,23 +16,57 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="homestyles.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="navbar-content">
-            <!-- Logo on the left -->
-            <img src="assets/newlogo.webp" alt="Logo" class="logo">
-            <!-- Navigation links -->
-            <ul>
-                <li><a href="#home">Talk To Expert</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="nutrition.html">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-content">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <img src="assets/bearitt logo.png" alt="Logo" />
+                </a>
+    
+                <!-- Mobile Toggle Button -->
+                <button id="mobile-menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+    
+                <!-- Desktop Navigation Links -->
+                <ul class="navbar-links" id="navbar-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="community.html">Services</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="#contact">Fitness</a></li>
+                    <li><a href="#contact">Trainer</a></li>
+                    <li><a href="#contact">Shop</a></li>
+                </ul>
+                <div class="user-info">
+                    <span class="user-email">?php echo $user_email; ?</span>
+                    <a href="logout.php" class="btn btn-danger ml-3">Sign Out</a>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer">
+        <!-- Close Button -->
+        <button id="close-drawer" class="close-drawer">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="#contact">Fitness</a></li>
+            <li><a href="#contact">Trainer</a></li>
+            <li><a href="#contact">Shop</a></li>
+        </ul>
+    </div>
+    </header>
+    
 
     <!-- Yellow background div under the navbar -->
     <div class="yellow-div">
@@ -85,70 +119,84 @@
         <div class="swiper-wrapper">
             <!-- Card 1 -->
             <div class="swiper-slide">
+                <a href="bulk.html" class="card-link">
                 <div class="card-container">
                     <img src="assets/home/blk hom.webp" alt="Card 1" class="card-image">
                     <div class="card-overlay">
                         <h5 class="card-title">Men's Cutting / Bulking</h5>
                     </div>
-                </div>
+                </div> </a>
             </div>
             <!-- Card 2 -->
             <div class="swiper-slide">
+                <a href="womendiet.html" class="card-link">
                 <div class="card-container">
+                    
                     <img src="assets/home/wombulk.webp" alt="Card 2" class="card-image">
                     <div class="card-overlay">
-                        <h5 class="card-title">Women's Bulking</h5>
+                        <h5 class="card-title">Women's Diet Plan</h5>
                     </div>
-                </div>
+                </div></a>
             </div>
             <!-- Card 3 -->
             <div class="swiper-slide">
+                <a href="#" class="card-link">
                 <div class="card-container">
-                    <img src="assets/bg1.webp" alt="Card 3" class="card-image">
+                    <img src="assets/group-people-exercising-together-outdoors.webp" alt="Card 3" class="card-image">
+                    <div class="card-overlay">
+                        <h5 class="card-title">Community</h5>
+                    </div>
+                </div></a>
+            </div>
+            <!-- Card 4 -->
+            <div class="swiper-slide">
+                <div class="card-container">
+                    <img src="assets/Untitled design (6).webp" alt="Card 4" class="card-image">
                     <div class="card-overlay">
                         <h5 class="card-title">Exercises</h5>
                     </div>
                 </div>
             </div>
-            <!-- Card 4 -->
-            <div class="swiper-slide">
-                <div class="card-container">
-                    <img src="assets/contact.webp" alt="Card 4" class="card-image">
-                    <div class="card-overlay">
-                        <h5 class="card-title">Silent Power</h5>
-                    </div>
-                </div>
-            </div>
             <!-- Additional Cards -->
             <div class="swiper-slide">
+                <a href="/footer/bmr.html" class="card-link"></a>
                 <div class="card-container">
-                    <img src="assets/1ea7542a-0901-416a-9588-3b55c1a1970d.jpg" alt="Card 5" class="card-image">
+                    <img src="assets/physical-activity-stats-around-person (1).webp" alt="Card 5" class="card-image">
                     <div class="card-overlay">
-                        <h5 class="card-title">Community</h5>
+                        <h5 class="card-title">BMR Calculator</h5>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="card-container">
-                    <img src="assets/assets/attractive-man-showing-muscles.jpg" alt="Card 6" class="card-image">
+                    <img src="assets/berry-kiwi-smoothies-straws.webp" alt="Card 6" class="card-image">
                     <div class="card-overlay">
-                        <h5 class="card-title">Titan Force</h5>
+                        <h5 class="card-title">Smoothies</h5>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="card-container">
-                    <img src="assets/apkdemo.webp" alt="Card 7" class="card-image">
+                    <img src="assets/Untitled design (5).webp" alt="Card 7" class="card-image">
                     <div class="card-overlay">
-                        <h5 class="card-title">Dragon's Fury</h5>
+                        <h5 class="card-title">Fitness</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card-container">
+                    <img src="assets/attractive-man-showing-muscles.jpg" alt="Card 8" class="card-image">
+                    <div class="card-overlay">
+                        <h5 class="card-title">Trainer</h5>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="card-container">
-                    <img src="assets/boxing.jpg" alt="Card 8" class="card-image">
+                    <img src="assets/Untitled design (5).webp" alt="Card 7" class="card-image">
                     <div class="card-overlay">
-                        <h5 class="card-title">Phoenix Rise</h5>
+                        <h5 class="card-title">Shop</h5>
                     </div>
                 </div>
             </div>
@@ -164,6 +212,17 @@
         </div>
     </div>
 
+    <!-- Fitness Trainer Section -->
+<section class="fitness-trainer-section">
+    <div class="content">
+        <h1>ARE YOU A FITNESS TRAINER?</h1>
+        <p class="sub-heading">Are You Looking To Expand Your Reach</p>
+        <p class="highlight">Here’s Your Opportunity !!</p>
+        <a href="trainer-info.html" class="cta-button">Click to Know More</a>
+    </div>
+</section>
+
+
     <!-- Main Content Section -->
     <section class="main-content">
         <h1>Welcome to Our Website</h1>
@@ -172,6 +231,7 @@
 
     <!-- Custom JS for Swiper and other functionalities -->
     <script src="home.js"></script>
-   
+    
+    
 </body>
 </html>
