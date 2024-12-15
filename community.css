@@ -1,0 +1,129 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.header {
+    background-color: #6c757d;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.challenges-section {
+    padding: 2rem 1rem;
+}
+
+.challenge {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-media {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #6c757d;
+    font-size: 1.5rem;
+}
+
+.contact-info {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+
+
+/* Swiper container */
+.swiper-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Ensure no overflow outside the visible area */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Ensure no margin */
+}
+
+/* Swiper Slide */
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%; /* Full width for each slide */
+    margin: 10px; /* Remove margin to prevent gaps */
+}
+
+/* Cards are shown one at a time (full screen swiper) */
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+    padding: 0; /* Ensure no padding */
+}
+
+/* Card Container Styling */
+.card-container {
+    position: relative;
+    overflow: hidden;
+    width: 90%; /* Full width of swiper container */
+    height: 15rem; /* Default card height */
+    border-radius: 15px; /* Sharp corners */
+    margin: 0; /* No space between cards */
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the card area */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-container:hover .card-image {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Overlay Styling */
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem; /* Overlay height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* General styling for card headings */
+.card-title {
+    text-align: left; /* Default alignment for larger screens */
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* Center the heading text on mobile screens */
+@media (max-width: 768px) {
+    .card-title {
+        text-align: center;  /* Center align text on smaller screens */
+        font-size: 1.4rem;    /* Adjust font size for mobile */
+        position: absolute;   /* Position the title absolutely */
+        top: -150px;            /* Distance from the top of the card */
+        left: 50%;            /* Position from the left */
+        transform: translateX(-50%);  /* Center horizontally */
+    }
+
+    /* Mobile-specific adjustments */
+    .swiper-slide {
+        width: 50%;  /* Show 2 cards per slide on mobile */
+    }
+
+    /* Adjust card container size for mobile */
+    .card-container {
+        height: 20rem; /* Reduced height for mobile */
+    }
+}
